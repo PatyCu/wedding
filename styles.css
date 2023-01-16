@@ -95,12 +95,16 @@ nav a:hover{
     padding: 10px;
 }
 
+.section {
+    width: 100%;
+}
+
 /* HERO */
 #hero{
     text-align: center;
     /*max-width: 100%;*/
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     background-color: white;
 }
 
@@ -108,6 +112,68 @@ nav a:hover{
     max-width: 100%;
     /* this max height= height of the widest image possible at 1200px */
     max-height: 1055px;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.collection{
+    background-color: var(--colorLightGold);
+}
+
+
+#collection h2 {
+    font-size: 2.5rem;
+    padding-top: 3rem;
+}
+
+figure {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--colorGold);
+}
+
+/* img width = 100% gives flexibility to the img 
+we can coulple it to max-width so we limit until where can it stretch */
+figure img{
+    margin-bottom: -4px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -150px;
+}
+
+/* caption styling  */
+figcaption {
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    background-color: rgba(250, 242, 222, 0.8);
+    font-size: 1.875rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+figcaption a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
 }
 
 /* FOOTER */
@@ -165,6 +231,22 @@ footer{
         max-width: 850px;
         margin: 0 auto;
     }
+
+    section ul, 
+    .footer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    section li{
+        flex-basis: 49.5%;
+    }
+
+    /* turn off object position, inherit object-fit: cover */
+    figure img{
+        object-position: 0;
+    }
 }
 
 /******** DESKTOP **********/
@@ -190,5 +272,12 @@ footer{
     nav li:nth-child(6),
     nav li:nth-child(7) {
         order: 3;
+    }
+
+    section h2 {
+        margin-left: 100px;
+    }
+    section li{
+        flex-basis: 32.5%;
     }
 }
