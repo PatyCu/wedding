@@ -80,6 +80,21 @@ nav a:hover{
     color: var(--colorBlack);
 }
 
+#welcome{
+    margin-top: 3rem;
+    padding: 0 10px 10px 10px;
+}
+
+#welcome h2{
+    text-align: center;
+}
+
+.welcome-text{
+    display: block;
+    line-height: 1.7;
+    padding: 10px;
+}
+
 /* HERO */
 #hero{
     text-align: center;
@@ -138,6 +153,17 @@ footer{
     nav a:hover {
         color: var(--colorGold);
         background-color: transparent;
+    }
+
+    #welcome{
+        margin: 0 auto;
+    }
+
+    /* display: flow-root clears the float!!!! max-width keeps the text line length shorter */
+    .welcome-text{
+        display: flow-root;
+        max-width: 850px;
+        margin: 0 auto;
     }
 }
 
