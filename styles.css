@@ -143,5 +143,26 @@ footer{
 
 /******** DESKTOP **********/
 @media (min-width: 1100px) {
+    /* navigation - logo in the center */
+    nav ul{
+        justify-content: flex-end;
+    }
 
+    nav li:first-child{
+        flex-basis: auto;
+        margin: 0 auto;
+        order: 2
+    }
+
+    nav li:nth-child(2),
+    nav li:nth-child(3),
+    nav li:nth-child(4) {
+        order: 1;
+    }
+    
+    nav li:nth-child(5),
+    nav li:nth-child(6),
+    nav li:nth-child(7) {
+        order: 3;
+    }
 }
