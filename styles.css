@@ -142,10 +142,12 @@ figure {
     max-height: 400px;
     overflow: hidden;
     position: relative;
+    /*
     border-width: 10px;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 1px;
     border-color: var(--colorGold);
+    */
 }
 
 /* img width = 100% gives flexibility to the img 
@@ -154,7 +156,7 @@ figure img{
     margin-bottom: -4px;
     width: 100%;
     object-fit: cover;
-    object-position: 0 -150px;
+    /*object-position: 0 -150px;*/
 }
 
 /* caption styling  */
