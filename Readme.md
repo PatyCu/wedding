@@ -16,8 +16,10 @@ A webapp built in React to offer an online wedding registry to people invited to
 
 ## Technologies
 * react: `^18.2.0`
-* react-dom: `^18.2.0``
+* react-dom: `^18.2.0`
 * @vitejs/plugin-react: `^3.0.1`
 * eslint": `^8.32.0`
 * prettier": `^2.8.3`
-* vite": `^4.0.4`
+* vite: `^4.0.4`
+* tailwindcss: `^3.2.4`
+* prettier-plugin-tailwindcss: `^0.2.1`
