@@ -1,6 +1,7 @@
 :root {
     --colorGray: #d6d0c1;
     --colorBlack: #0d0900;
+    --colorWhite: #fcfcfa;
     --colorGold: #e6aa12;
     --colorLightGold: #faf2de;
 }
@@ -29,7 +30,7 @@ body {
 
 /* stretches completely across the page with the color */
 .header {
-    background-color: var(--colorBlack);
+    background-color: var(--colorGray);
 }
 
 /* width limited and centered to line up with the rest of the page */
@@ -68,11 +69,11 @@ nav li:first-child a{
 nav a{
     text-decoration: none;
     font-size: 1.2rem;
-    color: var(--colorLightGold);
+    color: var(--colorGray);
     padding: 0.5rem;
     text-align: center;
     display: block;
-    background-color: var(--colorGold);
+    background-color: var(--colorWhite);
     border-radius: 5px;
 }
 
@@ -88,6 +89,10 @@ nav a:hover{
 
 #welcome h2{
     text-align: center;
+}
+
+#welcome img{
+    width: 100%;
 }
 
 .section {
@@ -220,7 +225,7 @@ footer{
     }
 
     nav a {
-        color: var(--colorLightGold);
+        color: var(--colorWhite);
         background-color: transparent;
         padding: 0;
     }
