@@ -9,6 +9,8 @@ A webapp built in React to offer an online wedding registry to people invited to
 3. **Install the app**. `npm install`
 4. **Run the example app**. `npm run dev`
 5. **Open the app in the browser** 
+5.1. [The index with a static page](http://localhost:5173/wedding-registry/main.html)
+5.2. [The main web app](http://localhost:5173/wedding-registry/main.html)
 
 <a id="technologies"/>
 
