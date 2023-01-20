@@ -1,27 +1,30 @@
-:root {
-    --colorGray: #d6d0c1;
-    --colorBlack: #0d0900;
-    --colorWhite: #fcfcfa;
-    --colorGold: #e6aa12;
-    --colorLightGold: #faf2de;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* generic site styles */
-
-html {
+@layer base {
+  html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: white;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: turquoise;
     padding: 0;
     margin: 0;
+    line-height: 2rem;
+    @apply bg-travel;
+  }
+}
+
+@layer components {
+  .search-input {
+    @apply mb-5 block w-60;
+  }
+}
+
+@layer utilities {
+  .grayed-out-disabled {
+    @apply disabled:opacity-50;
+  }
 }
