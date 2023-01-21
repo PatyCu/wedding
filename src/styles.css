@@ -71,6 +71,52 @@
     @apply text-gold;
   }
 
+  section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  figure {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  figure img {
+    margin-bottom: -4px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*object-position: 0 -150px;*/
+  }
+
+  figcaption {
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    background-color: rgba(250, 242, 222, 0.8);
+    font-size: 1.875rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  figcaption a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+  }
+
   /******** TABLETS **********/
   @screen md {
     header {
@@ -95,6 +141,20 @@
     nav a:hover {
       @apply text-gold;
       background-color: transparent;
+    }
+
+    section ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    section li {
+      flex-basis: 49.5%;
+    }
+
+    figure img {
+      object-position: 0;
     }
   }
 
@@ -121,6 +181,10 @@
     nav li:nth-child(6),
     nav li:nth-child(7) {
       order: 3;
+    }
+
+    section li {
+      flex-basis: 32.5%;
     }
   }
 }

@@ -27,7 +27,7 @@ const Trip = () => {
     <div className="mx-8">
       <ul className="my-6">
         {trip.map((dayTrip, dayNumber) => (
-          <li key="dayNumber">
+          <li key={dayNumber}>
             DIA {dayNumber + 1}: {dayTrip}
           </li>
         ))}

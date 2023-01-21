@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
+
 const WeddingRegistry = () => {
   return (
-    <div id="container" className="m-10 w-11/12 bg-white/85 p-10">
-      <h2 className="m-10 p-0 text-xl font-bold">Llista de noces</h2>
+    <div id="container" className="my-0 mx-auto w-full p-10">
+      <h2 className="pb-5 text-center text-2xl md:my-0 md:mx-auto">
+        Llista de noces
+      </h2>
       <div className="flex">
-        <div className="mr-10 w-2/5">
+        <div className="my-0 mr-10 w-2/5 lg:w-1/5">
           <img
             src="../img/parella.jpg"
-            className="shadow-slate-500 rounded-full shadow-2xl"
+            className="rounded-full shadow-2xl shadow-slate-500"
             alt="selfie de l'Oriol i la Paty junts"
           />
         </div>
@@ -29,6 +33,14 @@ const WeddingRegistry = () => {
             quod architecto nam cupiditate numquam voluptatem, necessitatibus
             nesciunt! Minima modi ipsum repudiandae?
           </p>
+          <div className="mx-auto mt-4 text-center">
+            <Link
+              to="/registry-list"
+              className="rounded border-none bg-orange-500 px-6 py-2 text-white hover:bg-yellow-500"
+            >
+              Participa!
+            </Link>
+          </div>
         </div>
       </div>
     </div>

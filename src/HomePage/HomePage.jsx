@@ -1,19 +1,74 @@
-import { Link } from "react-router-dom";
+import SecondaryNavigation from "./SecondaryNavigation";
 
 const HomePage = () => {
   return (
-    <div className="mx-auto w-11/12 justify-center bg-white">
-      <h1>HomePage</h1>
-      <div>
-        <ul>
-          <li>
-            <Link to="/registry-list">Viatge</Link>
-          </li>
-          <li>
-            <Link to="/wedding-registry">Llista de noces</Link>
-          </li>
-        </ul>
+    <div>
+      <section className="mt-12 px-10">
+        <h2 className="pb-5 text-center text-2xl md:my-0 md:mx-auto">
+          Gràcies per compartir aquesta celebració amb nosaltres!
+        </h2>
+        <div className="block p-10 leading-7">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            doloribus aspernatur ex quam quos placeat hic expedita tenetur,
+            iste, sint molestiae doloremque tempora deleniti, soluta alias iusto
+            voluptatem perspiciatis odit!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            doloribus aspernatur ex quam quos placeat hic expedita tenetur,
+            iste, sint molestiae doloremque tempora deleniti, soluta alias iusto
+            voluptatem perspiciatis odit!
+          </p>
+        </div>
+      </section>
+      <section className="my-0 mx-auto w-full max-w-7xl bg-white p-0 text-center">
+        <picture className="my-0 mx-auto max-h-fit ">
+          <source srcSet="img/hero-full.png" media="(min-width: 1200px)" />
+          <source srcSet="img/hero-1790.png" media="(min-width: 839px)" />
+          <source srcSet="img/hero-1055.png" media="(min-width: 501px)" />
+          <img src="img/hero-480.png" alt="Oriol i Paty fent el tonto" />
+        </picture>
+      </section>
+      <div className="my-10 mx-auto w-3/5 max-w-7xl border-b-4 border-solid border-gold p-0 text-center">
+        <h2 className="pb-2 text-center text-2xl text-gold md:my-0 md:mx-auto">
+          Informació d&apos;interès
+        </h2>
       </div>
+      <section className="my-0 mx-auto w-full max-w-7xl p-0 text-center">
+        <ul>
+          <SecondaryNavigation
+            title="Història"
+            link="/"
+            img="../img/parella.jpg"
+          />
+          <SecondaryNavigation
+            title="L'event"
+            link="/"
+            img="../img/torre-can-parellada.jpg"
+          />
+          <SecondaryNavigation
+            title="Confirmar Assistència"
+            link="/"
+            img="../img/assistencia.jpg"
+          />
+          <SecondaryNavigation
+            title="Com arribar"
+            link="/"
+            img="../img/how-to-get-there.jpg"
+          />
+          <SecondaryNavigation
+            title="Llista de noces"
+            link="/wedding-registry"
+            img="../img/suitcase.jpg"
+          />
+          <SecondaryNavigation
+            title="Galeria"
+            link="/"
+            img="../img/coming_soon.png"
+          />
+        </ul>
+      </section>
     </div>
   );
 };

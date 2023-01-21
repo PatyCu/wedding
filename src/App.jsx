@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
-import RegistryList from "./wedding-registry/registry-list";
+import RegistryList from "./wedding-registry/RegistryList";
 import WeddingRegistry from "./wedding-registry/WeddingRegistry";
 
 const App = () => {
