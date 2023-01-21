@@ -36,7 +36,7 @@ const WeddingRegistry = () => {
           <div className="mx-auto mt-4 text-center">
             <Link
               to="/registry-list"
-              className="rounded border-none bg-orange-500 px-6 py-2 text-white hover:bg-yellow-500"
+              className="rounded border-none bg-gold px-6 py-2 text-white hover:bg-gray"
             >
               Participa!
             </Link>

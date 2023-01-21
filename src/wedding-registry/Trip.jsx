@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 const Trip = () => {
   const trip = [
     "✈️ BCN --> AKL",
@@ -23,14 +25,29 @@ const Trip = () => {
     "✈️ AKL --> BCN",
   ];
 
+  function openDay(e, dayNumber) {
+    e.preventDefault();
+    console.log("Day number: ", dayNumber);
+  }
+
   return (
-    <div className="mx-8">
+    <div className="ml-8 w-fit">
       <ul className="my-6">
-        {trip.map((dayTrip, dayNumber) => (
-          <li key={dayNumber}>
-            DIA {dayNumber + 1}: {dayTrip}
-          </li>
-        ))}
+        <form>
+          {trip.map((dayTrip, dayNumber) => (
+            <li
+              key={dayNumber}
+              className="mb-2 rounded-lg border border-solid border-slate-300"
+            >
+              <button
+                className="h-full w-full p-6 text-left"
+                onClick={(e) => openDay(e, dayNumber)}
+              >
+                DIA {dayNumber + 1}: {dayTrip}
+              </button>
+            </li>
+          ))}
+        </form>
       </ul>
     </div>
   );
