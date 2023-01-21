@@ -3,7 +3,7 @@ import Trip from "./Trip";
 const RegistryList = () => {
   return (
     <div className="my-0 mx-auto flex w-11/12 flex-row flex-wrap">
-      <div className="m-10 basis-full justify-center border-b-2 p-0 text-center text-gold ">
+      <div className="m-10 basis-full justify-center border-b-2 p-0 text-center text-teal-500 ">
         Llista de noces
       </div>
       <div className="basis-1/3">
