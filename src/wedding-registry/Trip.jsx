@@ -43,7 +43,7 @@ const Trip = () => {
                 className="h-full w-full p-6 text-left"
                 onClick={(e) => openDay(e, dayNumber)}
               >
-                DIA {dayNumber + 1}: {dayTrip}
+                <b>DIA {dayNumber + 1}:</b> {dayTrip}
               </button>
             </li>
           ))}
