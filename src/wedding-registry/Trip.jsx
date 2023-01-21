@@ -40,7 +40,7 @@ const Trip = () => {
               className="mb-2 rounded-lg border border-solid border-slate-300"
             >
               <button
-                className="h-full w-full p-6 text-left"
+                className="h-full w-full p-6 text-left hover:bg-light-gold"
                 onClick={(e) => openDay(e, dayNumber)}
               >
                 <b>DIA {dayNumber + 1}:</b> {dayTrip}
