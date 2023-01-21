@@ -7,13 +7,19 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     /*background-color: turquoise;*/
     @apply bg-white;
     padding: 0;
     margin: 0;
-    line-height: 2rem;
   }
 
   header {
@@ -21,9 +27,6 @@
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    @media screen(md) {
-      padding: 3rem;
-    }
   }
 
   nav ul {
@@ -48,22 +51,77 @@
 
   nav li:first-child a {
     background-color: transparent;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   nav a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: var(--colorGray);
+    @apply text-gray;
     padding: 0.5rem;
     text-align: center;
     display: block;
-    background-color: var(--colorWhite);
+    @apply bg-white;
     border-radius: 5px;
   }
 
   nav a:hover {
-    background-color: var(--colorLightGold);
-    color: var(--colorBlack);
+    @apply bg-light-gold;
+    @apply text-gold;
+  }
+
+  /******** TABLETS **********/
+  @screen md {
+    header {
+      padding: 3rem;
+    }
+
+    nav ul {
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav li {
+      flex-basis: auto;
+      margin-bottom: 0;
+    }
+
+    nav a {
+      @apply text-white;
+      background-color: transparent;
+      padding: 0;
+    }
+    nav a:hover {
+      @apply text-gold;
+      background-color: transparent;
+    }
+  }
+
+  /******** DESKTOP **********/
+  @screen lg {
+    /* navigation - logo in the center */
+    nav ul {
+      justify-content: flex-end;
+    }
+
+    nav li:first-child {
+      flex-basis: auto;
+      margin: 0 auto;
+      order: 2;
+    }
+
+    nav li:nth-child(2),
+    nav li:nth-child(3),
+    nav li:nth-child(4) {
+      order: 1;
+    }
+
+    nav li:nth-child(5),
+    nav li:nth-child(6),
+    nav li:nth-child(7) {
+      order: 3;
+    }
   }
 }
 

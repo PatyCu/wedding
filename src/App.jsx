@@ -6,9 +6,9 @@ import WeddingRegistry from "./wedding-registry/WeddingRegistry";
 
 const App = () => {
   return (
-    <div className="">
-      <BrowserRouter>
-        <header className="bg-gradient-to-b from-gray to-white">
+    <BrowserRouter>
+      <div className="bg-gray">
+        <header>
           <nav>
             <ul>
               <li>
@@ -32,9 +32,7 @@ const App = () => {
                 <Link to="/">Com arribar</Link>
               </li>
               <li>
-                <Link to="/wedding-registry" className="hover:text-gold">
-                  Llista de noces
-                </Link>
+                <Link to="/wedding-registry">Llista de noces</Link>
               </li>
               <li>
                 <Link to="/">Galeria</Link>
@@ -42,13 +40,14 @@ const App = () => {
             </ul>
           </nav>
         </header>
-        <Routes>
-          <Route path="/registry-list" element={<RegistryList />} />
-          <Route path="/wedding-registry" element={<WeddingRegistry />} />
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+
+      <Routes>
+        <Route path="/registry-list" element={<RegistryList />} />
+        <Route path="/wedding-registry" element={<WeddingRegistry />} />
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
