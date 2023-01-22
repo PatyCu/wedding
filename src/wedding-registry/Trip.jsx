@@ -2,13 +2,12 @@
 
 import TripDay from "./TripDay";
 import { useState } from "react";
-import fetchDataTrip from "../data/fetchDataTrip";
-import getTripDays from "../data/getDataTrip";
+import { fetchDataTrip, getTripDaysByTitle } from "../data/fetchDataTrip";
 
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 const Trip = () => {
   const tripData = fetchDataTrip();
-  const tripTitles = getTripDays(tripData.tripDays);
+  const tripTitles = getTripDaysByTitle(tripData.tripDays);
   const [dayTripClicked, setDayTripClicked] = useState(false);
   const [dayNumberClicked, setDayNumberClicked] = useState(-1);
 
@@ -42,6 +41,7 @@ const Trip = () => {
                 <TripDay
                   dayNumber={dayNumber}
                   dayNumberClicked={dayNumberClicked}
+                  dayTripDetails={tripData.tripDays[dayNumber]}
                 />
               )}
             </li>

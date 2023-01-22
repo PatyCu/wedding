@@ -9,4 +9,12 @@ const fetchDataTrip = () => {
   return dataTrip;
 };
 
-export default fetchDataTrip;
+const getTripDaysByTitle = (tripDays) => {
+  const tripTitles = [];
+  tripDays.map((tripDay) => {
+    tripTitles.push(tripDay.dayTitle);
+  });
+  return tripTitles;
+};
+
+export { fetchDataTrip, getTripDaysByTitle };
