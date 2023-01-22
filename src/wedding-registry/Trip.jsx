@@ -2,33 +2,13 @@
 
 import TripDay from "./TripDay";
 import { useState } from "react";
+import fetchDataTrip from "../data/fetchDataTrip";
+import getTripDays from "../data/getDataTrip";
 
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 const Trip = () => {
-  const trip = [
-    "✈️ BCN --> AKL",
-    "✈️",
-    "Auckland",
-    "Auckland --> Hobbiton --> Rotorua",
-    "Rotorua",
-    "Rotorua --> Tongariro Park",
-    "Tongariro Park",
-    "Tongariro Park --> Martinborough",
-    "Martinborough --> Wellington",
-    "Wellington --> Picton --> Kaiteriteri",
-    "Kaiteriteri",
-    "Kaiteriteri --> Punakaiki",
-    "Punakaiki --> Franz Josef Glacier",
-    "Franz Josef Glacier --> Wanaka",
-    "Wanaka --> Queenstown",
-    "Queenstown",
-    "Queenstown",
-    "Queenstown --> Christchurch",
-    "Christchurch --> Kaikoura",
-    "Kaikoura --> ✈️ Christchurch --> ✈️ AUCK --> ✈️ BCN",
-    "✈️ AKL --> BCN",
-  ];
-
+  const tripData = fetchDataTrip();
+  const tripTitles = getTripDays(tripData.tripDays);
   const [dayTripClicked, setDayTripClicked] = useState(false);
   const [dayNumberClicked, setDayNumberClicked] = useState(-1);
 
@@ -47,7 +27,7 @@ const Trip = () => {
     <div className="ml-8 w-fit">
       <ul className="my-6">
         <form>
-          {trip.map((dayTrip, dayNumber) => (
+          {tripTitles.map((dayTrip, dayNumber) => (
             <li
               key={dayNumber}
               className="mb-2 rounded-lg border border-solid border-slate-300"

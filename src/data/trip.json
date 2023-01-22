@@ -1,0 +1,69 @@
+{
+  "tripDestination": "Nova Zelanda",
+  "people": [{ "name": "Oriol" }, { "name": "Paty" }],
+  "tripDays": [
+    {
+      "dayTitle": "✈️ BCN --> AKL"
+    },
+    {
+      "dayTitle": "✈️"
+    },
+    {
+      "dayTitle": "Auckland"
+    },
+    {
+      "dayTitle": "Auckland --> Hobbiton --> Rotorua"
+    },
+    {
+      "dayTitle": "Rotorua"
+    },
+    {
+      "dayTitle": "Rotorua --> Tongariro Park"
+    },
+    {
+      "dayTitle": "Tongariro Park"
+    },
+    {
+      "dayTitle": "Tongariro Park --> Martinborough"
+    },
+    {
+      "dayTitle": "Martinborough --> Wellington"
+    },
+    {
+      "dayTitle": "Wellington --> Picton --> Kaiteriteri"
+    },
+    {
+      "dayTitle": "Kaiteriteri"
+    },
+    {
+      "dayTitle": "Kaiteriteri --> Punakaiki"
+    },
+    {
+      "dayTitle": "Punakaiki --> Franz Josef Glacier"
+    },
+    {
+      "dayTitle": "Franz Josef Glacier --> Wanaka"
+    },
+    {
+      "dayTitle": "Wanaka --> Queenstown"
+    },
+    {
+      "dayTitle": "Queenstown"
+    },
+    {
+      "dayTitle": "Queenstown"
+    },
+    {
+      "dayTitle": "Queenstown --> Christchurch"
+    },
+    {
+      "dayTitle": "Christchurch --> Kaikoura"
+    },
+    {
+      "dayTitle": "Kaikoura --> ✈️ Christchurch --> ✈️ AUCK --> ✈️ BCN"
+    },
+    {
+      "dayTitle": "✈️ AKL --> BCN"
+    }
+  ]
+}
