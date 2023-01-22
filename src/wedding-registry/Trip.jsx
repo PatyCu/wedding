@@ -1,4 +1,8 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
+
+import TripDay from "./TripDay";
+import { useState } from "react";
+
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 const Trip = () => {
   const trip = [
@@ -25,9 +29,18 @@ const Trip = () => {
     "✈️ AKL --> BCN",
   ];
 
+  const [dayTripClicked, setDayTripClicked] = useState(false);
+  const [dayNumberClicked, setDayNumberClicked] = useState(-1);
+
   function openDay(e, dayNumber) {
     e.preventDefault();
-    console.log("Day number: ", dayNumber);
+    if (!dayTripClicked) {
+      setDayTripClicked(true);
+      setDayNumberClicked(dayNumber);
+    } else {
+      setDayTripClicked(false);
+      setDayNumberClicked(-1);
+    }
   }
 
   return (
@@ -45,6 +58,12 @@ const Trip = () => {
               >
                 <b>DIA {dayNumber + 1}:</b> {dayTrip}
               </button>
+              {dayTripClicked && (
+                <TripDay
+                  dayNumber={dayNumber}
+                  dayNumberClicked={dayNumberClicked}
+                />
+              )}
             </li>
           ))}
         </form>
