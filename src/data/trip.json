@@ -3,12 +3,13 @@
   "people": [{ "name": "Oriol" }, { "name": "Paty" }],
   "tripDays": [
     {
-      "dayTitle": "✈️ BCN --> ✈️ DOH --> AKL",
+      "dayTitle": "De Barcelona a Auckland",
       "calendarDay": "09/10/2023",
       "dayItems": [
         {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
+          "itemTitle": "✈️ BCN --> DOH",
+          "itemValue": "500€",
+          "itemImg": "ticket-flight.png"
         }
       ]
     },
@@ -17,8 +18,14 @@
       "calendarDay": "10/10/2023",
       "dayItems": [
         {
-          "itemTitle": "Vol ✈️ DOH --> AKL",
-          "itemValue": "1500€"
+          "itemTitle": "✈️ DOH --> AKL",
+          "itemValue": "1500€",
+          "itemImg": "ticket-flight.png"
+        },
+        {
+          "itemTitle": "Auckland City Hotel",
+          "itemValue": "150€",
+          "itemImg": "hotel.png"
         }
       ]
     },
