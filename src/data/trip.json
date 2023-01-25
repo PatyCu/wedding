@@ -34,8 +34,9 @@
       "calendarDay": "11/10/2023",
       "dayItems": [
         {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
+          "itemTitle": "Auckland City Hotel",
+          "itemValue": "150€",
+          "itemImg": "hotel.png"
         }
       ]
     },

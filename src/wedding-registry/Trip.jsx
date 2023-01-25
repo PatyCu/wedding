@@ -23,7 +23,7 @@ const Trip = () => {
   }
 
   return (
-    <div className="ml-8 w-fit">
+    <div className="ml-0 md:ml-8">
       <ul className="my-6">
         <form>
           {tripTitles.map((dayTrip, dayNumber) => (

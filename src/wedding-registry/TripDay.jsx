@@ -7,7 +7,7 @@ const TripDay = ({ dayNumber, dayNumberClicked, dayTripDetails }) => {
     return (
       <div className="mx-auto mb-5 flex w-4/5">
         <div className="">
-          <ul className="flex flex-row flex-wrap content-between justify-around gap-2">
+          <ul className="mt-2 flex flex-row flex-wrap content-between justify-around gap-2">
             {dayItems.map((item) => (
               <ActivityGift
                 key={item.itemTitle}

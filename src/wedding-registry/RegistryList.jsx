@@ -8,13 +8,13 @@ const RegistryList = () => {
           La nostra lluna de mel... a Nova Zelanda 💍
         </h2>
       </div>
-      <div className="basis-1/3">
+      <div className="basis-full md:basis-1/3">
         <img
           src="../img/NewZealandTripOverview.png"
           alt="map of New Zealand with pins on it to signal de stops in a trip"
         />
       </div>
-      <div className="-mt-5 basis-2/3">
+      <div className="mx-auto sm:basis-full md:-mt-5 md:basis-2/3">
         <Trip />
       </div>
     </div>
