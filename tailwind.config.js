@@ -10,6 +10,9 @@ module.exports = {
         gold: "#e6aa12",
         "light-gold": "#faf2de",
       },
+      backgroundImage: {
+        "travel-background": "url('./img/travel-background.png')",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
