@@ -2,31 +2,27 @@
   "gifts": [
     {
       "itemKey": "1",
-      "dayNumber": "1",
-      "itemTitle": "✈️ BCN --> DOH",
-      "itemValue": "500€",
-      "itemImg": "ticket-flight.png"
+      "itemTitle": "Vols de BCN a NZ",
+      "itemValue": "1500€",
+      "itemImg": "gift_flights.jpg"
     },
     {
       "itemKey": "2",
-      "dayNumber": "1",
-      "itemTitle": "✈️ DOH --> AKL",
-      "itemValue": "1500€",
-      "itemImg": "ticket-flight.png"
+      "itemTitle": "Hotel a Auckland",
+      "itemValue": "300",
+      "itemImg": "gift_hotel_auckland.jpg"
     },
     {
       "itemKey": "3",
-      "dayNumber": "2",
-      "itemTitle": "Auckland City Hotel",
-      "itemValue": "150€",
-      "itemImg": "hotel.png"
+      "itemTitle": "Visita a Hobbiton",
+      "itemValue": "106€",
+      "itemImg": "gift_hobbiton.jpg"
     },
     {
       "itemKey": "4",
-      "dayNumber": "3",
-      "itemTitle": "Auckland City Hotel",
-      "itemValue": "150€",
-      "itemImg": "hotel.png"
+      "itemTitle": "Hotel a Rotorua",
+      "itemValue": "300€",
+      "itemImg": "gift_hotel_rotorua.jpg"
     }
   ]
 }
