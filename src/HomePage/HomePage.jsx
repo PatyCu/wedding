@@ -40,7 +40,7 @@ const HomePage = () => {
           <li key="historia">
             <SecondaryNavigation
               title="Història"
-              link="/"
+              link="/historia"
               img="../img/parella.jpg"
             />
           </li>

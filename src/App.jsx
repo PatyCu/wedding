@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
 import Gift from "./wedding-registry/Gift";
 import RegistryList from "./wedding-registry/RegistryList";
-import WeddingRegistry from "./wedding-registry/WeddingRegistry";
+import Historia from "./HomePage/Historia";
 
 const App = () => {
   return (
@@ -21,7 +21,7 @@ const App = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/">Història</Link>
+                <Link to="/historia">Història</Link>
               </li>
               <li>
                 <Link to="/">L&apos;event</Link>
@@ -33,7 +33,7 @@ const App = () => {
                 <Link to="/">Com arribar</Link>
               </li>
               <li>
-                <Link to="/wedding-registry">Llista de noces</Link>
+                <Link to="/registry-list">Llista de noces</Link>
               </li>
               <li>
                 <Link to="/">Galeria</Link>
@@ -45,7 +45,7 @@ const App = () => {
 
       <Routes>
         <Route path="/registry-list" element={<RegistryList />} />
-        <Route path="/wedding-registry" element={<WeddingRegistry />} />
+        <Route path="/historia" element={<Historia />} />
         <Route path="/gift/:id" element={<Gift />} />
         <Route path="/" element={<HomePage />} />
       </Routes>

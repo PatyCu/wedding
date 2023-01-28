@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const WeddingRegistry = () => {
+const Historia = () => {
   return (
     <div id="container" className="my-0 mx-auto w-full p-10">
       <h2 className="pb-5 text-center text-2xl md:my-0 md:mx-auto">
@@ -47,4 +47,4 @@ const WeddingRegistry = () => {
   );
 };
 
-export default WeddingRegistry;
+export default Historia;
