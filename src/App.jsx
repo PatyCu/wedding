@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
+import Gift from "./wedding-registry/Gift";
 import RegistryList from "./wedding-registry/RegistryList";
 import WeddingRegistry from "./wedding-registry/WeddingRegistry";
 
@@ -14,7 +15,7 @@ const App = () => {
               <li>
                 <Link to="/">
                   <img
-                    src="img/monograma-clar_300_cropped.png"
+                    src="/img/monograma-clar_300_cropped.png"
                     alt="Monograma O&P"
                   />
                 </Link>
@@ -45,6 +46,7 @@ const App = () => {
       <Routes>
         <Route path="/registry-list" element={<RegistryList />} />
         <Route path="/wedding-registry" element={<WeddingRegistry />} />
+        <Route path="/gift/:id" element={<Gift />} />
         <Route path="/" element={<HomePage />} />
       </Routes>
     </BrowserRouter>

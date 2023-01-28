@@ -1,0 +1,28 @@
+{
+  "gifts": [
+    {
+      "itemKey": "1",
+      "itemTitle": "Vols de BCN a NZ",
+      "itemValue": "1500€",
+      "itemImg": "gift_flights.jpg"
+    },
+    {
+      "itemKey": "2",
+      "itemTitle": "Hotel a Auckland",
+      "itemValue": "300",
+      "itemImg": "gift_hotel_auckland.jpg"
+    },
+    {
+      "itemKey": "3",
+      "itemTitle": "Visita a Hobbiton",
+      "itemValue": "106€",
+      "itemImg": "gift_hobbiton.jpg"
+    },
+    {
+      "itemKey": "4",
+      "itemTitle": "Hotel a Rotorua",
+      "itemValue": "300€",
+      "itemImg": "gift_hotel_rotorua.jpg"
+    }
+  ]
+}
