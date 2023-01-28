@@ -8,4 +8,8 @@ const getAllGifts = () => {
   return allGifts;
 };
 
-export { getAllGifts };
+const getGiftById = (id) => {
+  return gifts.gifts[id];
+};
+
+export { getAllGifts, getGiftById };

@@ -59,13 +59,13 @@ const RegistryList = () => {
   */
 
   return (
-    <div className="m-0 w-full p-0">
-      <section className="m-0 w-full p-0">
-        <div className="relative w-full bg-teal-200">
+    <div className="w-ful lp-0 m-0">
+      <div className="m-0 h-full w-full p-0">
+        <div className="relative w-full">
           <img
             src="../img/new_zealand_cover_w_2400.jpg"
             alt="Snowed mountains and a lake in a New Zealander landscape"
-            className="w-full "
+            className="w-full"
           />
           <div className="absolute top-1/4 left-4">
             <h1 className="text-3xl md:text-7xl">Nova Zelanda 💍</h1>
@@ -81,7 +81,7 @@ const RegistryList = () => {
             />
           </div>
         </div>
-      </section>
+      </div>
       <section className="my-10">
         <h2 className="pb-5 text-2xl md:my-0 md:mx-auto">Regals</h2>
         <GiftList />
