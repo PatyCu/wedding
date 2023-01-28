@@ -1,0 +1,32 @@
+{
+  "gifts": [
+    {
+      "itemKey": "1",
+      "dayNumber": "1",
+      "itemTitle": "✈️ BCN --> DOH",
+      "itemValue": "500€",
+      "itemImg": "ticket-flight.png"
+    },
+    {
+      "itemKey": "2",
+      "dayNumber": "1",
+      "itemTitle": "✈️ DOH --> AKL",
+      "itemValue": "1500€",
+      "itemImg": "ticket-flight.png"
+    },
+    {
+      "itemKey": "3",
+      "dayNumber": "2",
+      "itemTitle": "Auckland City Hotel",
+      "itemValue": "150€",
+      "itemImg": "hotel.png"
+    },
+    {
+      "itemKey": "4",
+      "dayNumber": "3",
+      "itemTitle": "Auckland City Hotel",
+      "itemValue": "150€",
+      "itemImg": "hotel.png"
+    }
+  ]
+}

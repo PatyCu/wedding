@@ -1,4 +1,4 @@
-import SecondaryNavigation from "./SecondaryNavigation";
+import SecondaryNavigation from "../utils/SecondaryNavigation";
 
 const HomePage = () => {
   return (
@@ -37,36 +37,48 @@ const HomePage = () => {
       </div>
       <section className="my-0 mx-auto w-full max-w-7xl p-0 text-center">
         <ul>
-          <SecondaryNavigation
-            title="Història"
-            link="/"
-            img="../img/parella.jpg"
-          />
-          <SecondaryNavigation
-            title="L'event"
-            link="/"
-            img="../img/torre-can-parellada.jpg"
-          />
-          <SecondaryNavigation
-            title="Confirmar Assistència"
-            link="/"
-            img="../img/assistencia.jpg"
-          />
-          <SecondaryNavigation
-            title="Com arribar"
-            link="/"
-            img="../img/how-to-get-there.jpg"
-          />
-          <SecondaryNavigation
-            title="Llista de noces"
-            link="/wedding-registry"
-            img="../img/suitcase.jpg"
-          />
-          <SecondaryNavigation
-            title="Galeria"
-            link="/"
-            img="../img/coming_soon.png"
-          />
+          <li key="historia">
+            <SecondaryNavigation
+              title="Història"
+              link="/"
+              img="../img/parella.jpg"
+            />
+          </li>
+          <li key="event">
+            <SecondaryNavigation
+              title="L'event"
+              link="/"
+              img="../img/torre-can-parellada.jpg"
+            />
+          </li>
+          <li key="rsvp">
+            <SecondaryNavigation
+              title="Confirmar Assistència"
+              link="/"
+              img="../img/assistencia.jpg"
+            />
+          </li>
+          <li key="arribar">
+            <SecondaryNavigation
+              title="Com arribar"
+              link="/"
+              img="../img/how-to-get-there.jpg"
+            />
+          </li>
+          <li key="registry">
+            <SecondaryNavigation
+              title="Llista de noces"
+              link="/wedding-registry"
+              img="../img/suitcase.jpg"
+            />
+          </li>
+          <li key="gallery">
+            <SecondaryNavigation
+              title="Galeria"
+              link="/"
+              img="../img/coming_soon.png"
+            />
+          </li>
         </ul>
       </section>
     </div>

@@ -1,4 +1,4 @@
-import Trip from "./Trip";
+import GiftList from "./GiftList";
 
 const RegistryList = () => {
   /*
@@ -84,7 +84,7 @@ const RegistryList = () => {
       </section>
       <section className="my-10">
         <h2 className="pb-5 text-2xl md:my-0 md:mx-auto">Regals</h2>
-        <Trip />
+        <GiftList />
       </section>
     </div>
   );

@@ -4,221 +4,87 @@
   "tripDays": [
     {
       "dayTitle": "De Barcelona a Auckland",
-      "calendarDay": "09/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "✈️ BCN --> DOH",
-          "itemValue": "500€",
-          "itemImg": "ticket-flight.png"
-        }
-      ]
+      "calendarDay": "09/10/2023"
     },
     {
       "dayTitle": "✈️ DOH --> AKL",
-      "calendarDay": "10/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "✈️ DOH --> AKL",
-          "itemValue": "1500€",
-          "itemImg": "ticket-flight.png"
-        },
-        {
-          "itemTitle": "Auckland City Hotel",
-          "itemValue": "150€",
-          "itemImg": "hotel.png"
-        }
-      ]
+      "calendarDay": "10/10/2023"
     },
     {
       "dayTitle": "Auckland",
-      "calendarDay": "11/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Auckland City Hotel",
-          "itemValue": "150€",
-          "itemImg": "hotel.png"
-        }
-      ]
+      "calendarDay": "11/10/2023"
     },
     {
       "dayTitle": "Auckland --> Hobbiton --> Rotorua",
-      "calendarDay": "12/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "12/10/2023"
     },
     {
       "dayTitle": "Rotorua",
-      "calendarDay": "13/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "13/10/2023"
     },
     {
       "dayTitle": "Rotorua --> Tongariro Park",
-      "calendarDay": "14/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "14/10/2023"
     },
     {
       "dayTitle": "Tongariro Park",
-      "calendarDay": "15/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "15/10/2023"
     },
     {
       "dayTitle": "Tongariro Park --> Martinborough",
-      "calendarDay": "16/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "16/10/2023"
     },
     {
       "dayTitle": "Martinborough --> Wellington",
-      "calendarDay": "17/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "17/10/2023"
     },
     {
       "dayTitle": "Wellington --> Picton --> Kaiteriteri",
-      "calendarDay": "18/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "18/10/2023"
     },
     {
       "dayTitle": "Kaiteriteri",
-      "calendarDay": "19/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "19/10/2023"
     },
     {
       "dayTitle": "Kaiteriteri --> Punakaiki",
-      "calendarDay": "20/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "20/10/2023"
     },
     {
       "dayTitle": "Punakaiki --> Franz Josef Glacier",
-      "calendarDay": "21/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "21/10/2023"
     },
     {
       "dayTitle": "Franz Josef Glacier --> Wanaka",
-      "calendarDay": "22/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "22/10/2023"
     },
     {
       "dayTitle": "Wanaka --> Queenstown",
-      "calendarDay": "23/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "23/10/2023"
     },
     {
       "dayTitle": "Queenstown",
-      "calendarDay": "24/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "24/10/2023"
     },
     {
       "dayTitle": "Queenstown",
-      "calendarDay": "25/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "25/10/2023"
     },
     {
       "dayTitle": "Queenstown --> Christchurch",
-      "calendarDay": "26/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "26/10/2023"
     },
     {
       "dayTitle": "Christchurch --> Kaikoura",
-      "calendarDay": "27/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "27/10/2023"
     },
     {
       "dayTitle": "Kaikoura --> ✈️ Christchurch --> ✈️ AUCK --> ✈️ BCN",
-      "calendarDay": "28/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "28/10/2023"
     },
     {
       "dayTitle": "✈️ AKL --> BCN",
-      "calendarDay": "29/10/2023",
-      "dayItems": [
-        {
-          "itemTitle": "Vol ✈️ BCN --> DOH",
-          "itemValue": "500€"
-        }
-      ]
+      "calendarDay": "29/10/2023"
     }
   ]
 }
