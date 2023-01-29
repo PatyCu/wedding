@@ -56,22 +56,13 @@ const Gift = () => {
         <div className="mt-6 pl-6 md:basis-1/2">
           <div className="block w-full">
             <h1 className="text-4xl font-bold">{gift.itemTitle}</h1>
-            <h5 className="text-xl">Short desciption</h5>
+            <h5 className="p-2">{gift.itemDescription}</h5>
           </div>
           <div className="mt-8">
-            <hr className="text-gray" />
-            <p className="p-6">
-              <b className="text-3xl">{gift.itemFunded}</b>
-              <span className="ml-2 text-sm text-slate-700">
-                {" "}
-                fundats de {gift.itemValue}
-              </span>
-              <ProgressBar
-                itemValue={gift.itemValue}
-                itemFunded={gift.itemFunded}
-              />
-            </p>
-            <hr className="text-gray" />
+            <ProgressBar
+              itemValue={gift.itemValue}
+              itemFunded={gift.itemFunded}
+            />
           </div>
           <div className="mt-6">
             <span>Dona qualsevol suma fins a {amountToFund}€</span>

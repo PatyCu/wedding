@@ -3,6 +3,7 @@
     {
       "itemKey": "0",
       "itemTitle": "Vols de BCN a NZ",
+      "itemDescription": "Vols d'anada i tornada en classe turista amb Qatar Airways",
       "itemValue": "1500€",
       "itemFunded": "750€",
       "itemImg": "gift_flights.jpg"
@@ -10,6 +11,7 @@
     {
       "itemKey": "1",
       "itemTitle": "Hotel a Auckland",
+      "itemDescription": "Dues nits d'hotel a l'Auckand City Hotel",
       "itemValue": "300€",
       "itemFunded": "100€",
       "itemImg": "gift_hotel_auckland.jpg"
@@ -17,6 +19,7 @@
     {
       "itemKey": "2",
       "itemTitle": "Visita a Hobbiton",
+      "itemDescription": "Hobbiton Movie Set Tour",
       "itemValue": "106€",
       "itemFunded": "106€",
       "itemImg": "gift_hobbiton.jpg"
@@ -24,6 +27,7 @@
     {
       "itemKey": "3",
       "itemTitle": "Hotel a Rotorua",
+      "itemDescription": "Dues nits d'hotel al Rotorua Distinction Rotorua Hotel",
       "itemValue": "300€",
       "itemFunded": "300€",
       "itemImg": "gift_hotel_rotorua.jpg"
