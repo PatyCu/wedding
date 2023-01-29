@@ -59,11 +59,11 @@ const Gift = () => {
             <hr className="text-gray" />
             <p className="p-6">
               <b className="text-3xl">{gift.itemFunded}</b>
-              <text className="ml-2 text-sm text-slate-700">
+              <span className="ml-2 text-sm text-slate-700">
                 {" "}
                 fundats de
                 {gift.itemValue}
-              </text>
+              </span>
             </p>
             <hr className="text-gray" />
           </div>
