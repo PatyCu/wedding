@@ -8,8 +8,8 @@ const Gift = () => {
   const amountToFund = parseFloat(gift.itemValue) - parseFloat(gift.itemFunded);
 
   return (
-    <div>
-      <div id="breadcrumb" className="m-6 flex flex-row flex-wrap">
+    <div className="my-6 mx-6 lg:mx-auto lg:max-w-[1200px]">
+      <div id="breadcrumb" className="flex flex-row flex-wrap">
         <Link
           to="/registry-list"
           className="group flex gap-2 font-bold hover:text-gold"

@@ -6,7 +6,7 @@ const GiftList = () => {
   const imgPath = "../img/";
 
   return (
-    <div className="my-0 mx-auto w-full max-w-7xl p-0 text-center">
+    <div className="my-0 mx-auto p-0 text-center lg:max-w-[1200px]">
       <ul>
         {allGifts.map((gift) => (
           <li key={gift.itemKey}>

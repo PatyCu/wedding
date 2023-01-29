@@ -3,7 +3,7 @@ import SecondaryNavigation from "../utils/SecondaryNavigation";
 const HomePage = () => {
   return (
     <div>
-      <section className="mt-12 px-10">
+      <section className="my-0 mx-auto mt-12 w-full max-w-[1200px] px-10">
         <h2 className="pb-5 text-center text-2xl md:my-0 md:mx-auto">
           Gràcies per compartir aquesta celebració amb nosaltres!
         </h2>
@@ -22,7 +22,7 @@ const HomePage = () => {
           </p>
         </div>
       </section>
-      <section className="my-0 mx-auto w-full max-w-7xl bg-white p-0 text-center">
+      <section className="my-0 mx-auto w-full max-w-[1200px] bg-white p-0 text-center">
         <picture className="my-0 mx-auto max-h-fit ">
           <source srcSet="img/hero-full.png" media="(min-width: 1200px)" />
           <source srcSet="img/hero-1790.png" media="(min-width: 839px)" />

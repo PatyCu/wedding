@@ -1,11 +1,7 @@
 import GiftList from "./GiftList";
 
-const RegistryList = () => {
-  return (
-    <div className="w-ful lp-0 m-0">
-      <div className="m-0 h-full w-full p-0">
-        <div className="relative w-full">
-          <picture className="max-h-fit ">
+/*
+ <picture className="">
             <source
               srcSet="../img/ new_zealand_cover_w_2400.jpg 2400w"
               media="(min-width: 1024px)"
@@ -21,9 +17,21 @@ const RegistryList = () => {
             <img
               src="../img/new_zealand_cover_w_300.jpg"
               alt="Snowed mountains and a lake in a New Zealander landscape"
-              className="w-full"
+              className="w-full lg:max-h-[60rem]"
             />
           </picture>
+*/
+
+const RegistryList = () => {
+  return (
+    <div className="m-0 my-0 mx-auto lg:max-h-fit lg:max-w-[1200px]">
+      <div className="m-0 p-0">
+        <div className="relative">
+          <img
+            src="../img/new_zealand_cover_w_2400.jpg"
+            alt="Snowed mountains and a lake in a New Zealander landscape"
+            className="w-full lg:max-h-[60rem]"
+          />
           <div className="absolute top-1/4 left-4">
             <h1 className="text-3xl md:text-7xl">Nova Zelanda 💍</h1>
             <h2 className="md:text-xl">
