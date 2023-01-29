@@ -5,6 +5,8 @@ const Gift = () => {
   const { id } = useParams();
   const gift = getGiftById(id);
   const prevAndNext = getPrevAndNextGift(id);
+  const amountToFund = parseFloat(gift.itemValue) - parseFloat(gift.itemFunded);
+
   return (
     <div>
       <div id="breadcrumb" className="m-6 flex flex-row flex-wrap">
@@ -61,11 +63,13 @@ const Gift = () => {
               <b className="text-3xl">{gift.itemFunded}</b>
               <span className="ml-2 text-sm text-slate-700">
                 {" "}
-                fundats de
-                {gift.itemValue}
+                fundats de {gift.itemValue}
               </span>
             </p>
             <hr className="text-gray" />
+          </div>
+          <div className="mt-6">
+            <span>Dona qualsevol suma fins a {amountToFund}€</span>
           </div>
         </div>
       </div>
