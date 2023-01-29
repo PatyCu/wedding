@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { getGiftById, getPrevAndNextGift } from "../data/fetchDataGifts";
+import ProgressBar from "../utils/ProgressBar";
 
 const Gift = () => {
   const { id } = useParams();
@@ -65,6 +66,10 @@ const Gift = () => {
                 {" "}
                 fundats de {gift.itemValue}
               </span>
+              <ProgressBar
+                itemValue={gift.itemValue}
+                itemFunded={gift.itemFunded}
+              />
             </p>
             <hr className="text-gray" />
           </div>
