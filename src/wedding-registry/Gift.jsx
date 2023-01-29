@@ -1,3 +1,4 @@
+import { Input } from "postcss";
 import { Link, useParams } from "react-router-dom";
 import { getGiftById, getPrevAndNextGift } from "../data/fetchDataGifts";
 import ProgressBar from "../utils/ProgressBar";
@@ -6,7 +7,12 @@ const Gift = () => {
   const { id } = useParams();
   const gift = getGiftById(id);
   const prevAndNext = getPrevAndNextGift(id);
-  const amountToFund = parseFloat(gift.itemValue) - parseFloat(gift.itemFunded);
+  const amountToFund = parseInt(gift.itemValue) - parseInt(gift.itemFunded);
+  const percentage = (
+    (100 * parseInt(gift.itemFunded)) /
+    parseInt(gift.itemValue)
+  ).toFixed(0);
+  let allowToContribute = percentage < 100 ? true : false;
 
   return (
     <div className="my-6 mx-6 lg:mx-auto lg:max-w-[1200px]">
@@ -53,19 +59,35 @@ const Gift = () => {
             alt="the current gift"
           />
         </div>
-        <div className="mt-6 pl-6 md:basis-1/2">
+        <div className="mt-6 block pl-6 md:basis-1/2">
           <div className="block w-full">
             <h1 className="text-4xl font-bold">{gift.itemTitle}</h1>
             <h5 className="p-2">{gift.itemDescription}</h5>
           </div>
-          <div className="mt-8">
+          <div className="mt-0">
             <ProgressBar
               itemValue={gift.itemValue}
               itemFunded={gift.itemFunded}
+              percentage={percentage}
             />
           </div>
           <div className="mt-6">
-            <span>Dona qualsevol suma fins a {amountToFund}€</span>
+            {allowToContribute && (
+              <div>
+                <form>
+                  <label htmlFor="contribute">
+                    Dona qualsevol suma fins a {amountToFund}€
+                    <input
+                      id="contribute"
+                      type="text"
+                      name="contribute"
+                      placeholder="0€"
+                      className="rounded-lg"
+                    />
+                  </label>
+                </form>
+              </div>
+            )}
           </div>
         </div>
       </div>

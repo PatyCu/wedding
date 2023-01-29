@@ -20,18 +20,14 @@ function calculateWidth(percentage) {
   return width;
 }
 
-const ProgressBar = ({ itemValue, itemFunded }) => {
-  const percentage = (
-    (100 * parseInt(itemFunded)) /
-    parseInt(itemValue)
-  ).toFixed(0);
+const ProgressBar = ({ itemValue, itemFunded, percentage }) => {
   const width = calculateWidth(percentage);
 
   const progressBarClassName = "relative h-full rounded-3xl bg-gold ".concat(
     width
   );
   return (
-    <div className="mt-6 py-4 px-6 shadow-lg">
+    <div className="max-w-xs py-4 px-6 shadow-lg">
       <div className="flex items-end justify-between gap-2">
         <span className="text-3xl font-bold text-gray">{percentage} % </span>
         <span className="text-xs">
