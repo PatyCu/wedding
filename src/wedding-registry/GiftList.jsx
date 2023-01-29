@@ -9,7 +9,7 @@ const GiftList = () => {
     <div className="my-0 mx-auto w-full max-w-7xl p-0 text-center">
       <ul>
         {allGifts.map((gift) => (
-          <li key={gift.key}>
+          <li key={gift.itemKey}>
             <SecondaryNavigation
               title={gift.itemTitle}
               link={`/gift/${gift.itemKey}`}
