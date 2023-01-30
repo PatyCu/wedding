@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 
-import TripDay from "./TripDay";
+import TripDay from "./todelete_TripDay";
 import { useState } from "react";
 import { fetchDataTrip, getTripDaysByTitle } from "../data/fetchDataTrip";
 

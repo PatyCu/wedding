@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { getGiftById, getPrevAndNextGift } from "../data/fetchDataGifts";
 import ProgressBar from "../utils/ProgressBar";
 
@@ -7,6 +7,7 @@ const Gift = () => {
   const gift = getGiftById(id);
   const prevAndNext = getPrevAndNextGift(id);
   const amountToFund = parseInt(gift.itemValue) - parseInt(gift.itemFunded);
+  const navigate = useNavigate();
   const percentage = (
     (100 * parseInt(gift.itemFunded)) /
     parseInt(gift.itemValue)
@@ -74,13 +75,18 @@ const Gift = () => {
             {allowToContribute && (
               <div className="pt-3">
                 Contribueix amb qualsevol suma fins a {amountToFund}€
-                <form>
-                  <div className="flex-flow group flex items-center pt-4">
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    navigate("/");
+                  }}
+                >
+                  <div className="flex-flow group flex w-4/5 items-center pt-4">
                     <label
                       htmlFor="contribute"
-                      className="h-10 flex-grow basis-1/5 rounded-l-lg border border-zinc-500 bg-zinc-400 pt-2 text-center align-middle font-bold"
+                      className="h-10 max-w-[50px] flex-grow basis-1/5 rounded-l-lg  border border-zinc-500 pt-2 text-center align-middle font-bold"
                     >
-                      EUR €
+                      €
                     </label>
                     <input
                       id="contribute"
@@ -88,11 +94,15 @@ const Gift = () => {
                       min="0"
                       max={amountToFund}
                       name="contribute"
-                      placeholder="0€"
-                      className="h-10 flex-grow basis-3/5 border-zinc-500 p-0 text-center"
+                      placeholder="0"
+                      className="h-10 max-w-[150px] flex-grow basis-3/5 border-zinc-500 p-0 text-center"
                     />
                     <button className="h-10  rounded-r-lg border border-zinc-500 bg-gray p-2 font-bold text-zinc-500 hover:bg-gold">
-                      <img src="/img/icon-arrow-right.svg" alt="Arrow icon" />
+                      <img
+                        src="/img/icon-arrow-right.svg"
+                        alt="Arrow icon"
+                        className="basis-1/5"
+                      />
                     </button>
                   </div>
                 </form>
