@@ -1,4 +1,3 @@
-import { Input } from "postcss";
 import { Link, useParams } from "react-router-dom";
 import { getGiftById, getPrevAndNextGift } from "../data/fetchDataGifts";
 import ProgressBar from "../utils/ProgressBar";
@@ -73,18 +72,29 @@ const Gift = () => {
           </div>
           <div className="mt-6">
             {allowToContribute && (
-              <div>
+              <div className="pt-3">
+                Contribueix amb qualsevol suma fins a {amountToFund}€
                 <form>
-                  <label htmlFor="contribute">
-                    Dona qualsevol suma fins a {amountToFund}€
+                  <div className="flex-flow group flex items-center pt-4">
+                    <label
+                      htmlFor="contribute"
+                      className="h-10 flex-grow basis-1/5 rounded-l-lg border border-zinc-500 bg-zinc-400 pt-2 text-center align-middle font-bold"
+                    >
+                      EUR €
+                    </label>
                     <input
                       id="contribute"
-                      type="text"
+                      type="number"
+                      min="0"
+                      max={amountToFund}
                       name="contribute"
                       placeholder="0€"
-                      className="rounded-lg"
+                      className="h-10 flex-grow basis-3/5 border-zinc-500 p-0 text-center"
                     />
-                  </label>
+                    <button className="h-10  rounded-r-lg border border-zinc-500 bg-gray p-2 font-bold text-zinc-500 hover:bg-gold">
+                      <img src="/img/icon-arrow-right.svg" alt="Arrow icon" />
+                    </button>
+                  </div>
                 </form>
               </div>
             )}
