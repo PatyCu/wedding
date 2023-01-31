@@ -4,14 +4,21 @@ import ProgressBar from "../utils/ProgressBar";
 import GiftContribution from "./GiftContrribution";
 
 const GiftDetails = ({ id, gift }) => {
-  const amountToFund = parseInt(gift.itemValue) - parseInt(gift.itemFunded);
+  const [acceptedContribution, setAcceptedContribution] = useState(false);
+  
   const navigate = useNavigate();
+
+  const amountToFund = parseInt(gift.itemValue) - parseInt(gift.itemFunded);
   const percentage = (
     (100 * parseInt(gift.itemFunded)) /
     parseInt(gift.itemValue)
   ).toFixed(0);
-  let allowToContribute = percentage < 100 ? true : false;
-  const [acceptedContribution, setAcceptedContribution] = useState(false);
+   let allowToContribute = percentage < 100 ? true : false;
+
+  const handleAcceptedContribution = () => {
+    setAcceptedContribution(false)
+  }
+
   return (
     <div>
       {!acceptedContribution && (
@@ -58,7 +65,7 @@ const GiftDetails = ({ id, gift }) => {
         </div>
       )}
       {acceptedContribution && (
-        <GiftContribution id={id} setAccepted={setAcceptedContribution} />
+        <GiftContribution id={id} handleAccepted={handleAcceptedContribution}/>
       )}
     </div>
   );
