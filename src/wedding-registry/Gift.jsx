@@ -24,6 +24,10 @@ const Gift = () => {
           />
         </div>
         <div className="mt-6 md:mt-0 md:basis-1/2 md:pl-6">
+          <div className="block w-full">
+            <h1 className="text-4xl font-bold">{gift.itemTitle}</h1>
+            <h5 className="p-2">{gift.itemDescription}</h5>
+          </div>
           <GiftDetails id={id} gift={gift} />
         </div>
       </div>

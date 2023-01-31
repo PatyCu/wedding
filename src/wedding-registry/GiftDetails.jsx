@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ProgressBar from "../utils/ProgressBar";
+import GiftContribution from "./GiftContrribution";
 
-const GiftDetails = ({ gift }) => {
+const GiftDetails = ({ id, gift }) => {
   const amountToFund = parseInt(gift.itemValue) - parseInt(gift.itemFunded);
   const navigate = useNavigate();
   const percentage = (
@@ -13,16 +14,14 @@ const GiftDetails = ({ gift }) => {
   const [acceptedContribution, setAcceptedContribution] = useState(false);
   return (
     <div>
-      <div className="block w-full">
-        <h1 className="text-4xl font-bold">{gift.itemTitle}</h1>
-        <h5 className="p-2">{gift.itemDescription}</h5>
-      </div>
       {!acceptedContribution && (
         <div className="mt-6">
           <ProgressBar
             itemValue={gift.itemValue}
             itemFunded={gift.itemFunded}
             percentage={percentage}
+            git
+            pul
           />
         </div>
       )}
@@ -59,19 +58,7 @@ const GiftDetails = ({ gift }) => {
         </div>
       )}
       {acceptedContribution && (
-        <div className="mt-6">
-          Accepted Contribution
-          <form
-            onSubmit={() => {
-              //e.preventDefault();
-              setAcceptedContribution(true);
-            }}
-          >
-            <button className="rounded-lg bg-black p-2 text-white hover:bg-gold">
-              Cancel
-            </button>
-          </form>
-        </div>
+        <GiftContribution id={id} setAccepted={setAcceptedContribution} />
       )}
     </div>
   );
