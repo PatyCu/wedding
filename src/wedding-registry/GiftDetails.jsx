@@ -5,6 +5,7 @@ import GiftContribution from "./GiftContrribution";
 const GiftDetails = ({ id, gift }) => {
   const [acceptedContribution, setAcceptedContribution] = useState(false);
   const [invalidContribution, setInvalidContribution] = useState(true);
+  const [amountToContribute, setAmountToContribute] = useState("");
   const amountToFund = parseInt(gift.itemValue) - parseInt(gift.itemFunded);
   const percentage = (
     (100 * parseInt(gift.itemFunded)) /
@@ -14,7 +15,6 @@ const GiftDetails = ({ id, gift }) => {
 
   const handleAcceptedContribution = () => {
     setAcceptedContribution(false);
-    setInvalidContribution(true);
   };
 
   const handleContributeInputValidation = (e) => {
@@ -49,6 +49,7 @@ const GiftDetails = ({ id, gift }) => {
               if (parseInt(contributeValue) > 0) {
                 setAcceptedContribution(true);
                 console.log(contributeValue);
+                setAmountToContribute(contributeValue);
               } else {
                 console.log("Valor = 0");
               }
@@ -65,7 +66,7 @@ const GiftDetails = ({ id, gift }) => {
                 max={amountToFund}
                 name="contribute"
                 placeholder="0"
-                className="h-10 max-w-[60px] flex-grow basis-3/5 rounded-l-lg border-l border-t border-b border-r-0 border-zinc-500 p-0 text-right"
+                className="h-10 max-w-[80px] flex-grow basis-3/5 rounded-l-lg border-l border-t border-b border-r-0 border-zinc-500 p-0 text-center placeholder:text-zinc-200"
                 onChange={(e) => handleContributeInputValidation(e)}
               />
               <span className="h-10 border-t border-b border-zinc-500 px-2 pt-2 text-center text-zinc-500">
@@ -74,7 +75,7 @@ const GiftDetails = ({ id, gift }) => {
               <button
                 type="submit"
                 disabled={invalidContribution}
-                className="h-10  max-w-[120px] basis-2/5 rounded-r-lg border border-zinc-500 bg-gray p-2 font-bold text-zinc-500 hover:bg-gold disabled:bg-zinc-300 disabled:text-zinc-200"
+                className="h-10 max-w-[120px] basis-2/5 rounded-r-lg border border-zinc-500 bg-black p-2 text-white enabled:hover:bg-gold disabled:cursor-not-allowed disabled:text-zinc-400 disabled:opacity-50"
               >
                 Contribueix!
               </button>
@@ -83,7 +84,11 @@ const GiftDetails = ({ id, gift }) => {
         </div>
       )}
       {acceptedContribution && (
-        <GiftContribution id={id} handleAccepted={handleAcceptedContribution} />
+        <GiftContribution
+          id={id}
+          amountToContribute={amountToContribute}
+          handleAccepted={handleAcceptedContribution}
+        />
       )}
     </div>
   );
