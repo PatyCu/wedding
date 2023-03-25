@@ -1,0 +1,50 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('mongodbVSCodePlaygroundDB');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+db.gifts.drop();
+
+// Insert a few documents into the sales collection.
+db.gifts.insertMany([
+  {
+      '_id': 0,
+      'itemTitle': 'Vols de BCN a NZ',
+      'itemDescription': 'Vols d\'anada i tornada en classe turista amb Qatar Airways',
+      'itemValue': 1500,
+      'itemFunded': 750,
+      'itemImg': 'gift_flights.jpg'
+    },
+    {
+      '_id': 1,
+      'itemTitle': 'Hotel a Auckland',
+      'itemDescription': 'Dues nits d\'hotel a Auckand City Hotel',
+      'itemValue': 300,
+      'itemFunded': 100,
+      'itemImg': 'gift_hotel_auckland.jpg'
+    },
+    {
+      '_id': '2',
+      'itemTitle': 'Visita a Hobbiton',
+      'itemDescription': 'Hobbiton Movie Set Tour',
+      'itemValue': 106,
+      'itemFunded': 106,
+      'itemImg': 'gift_hobbiton.jpg'
+    },
+    {
+      '_id': '3',
+      'itemTitle': 'Hotel a Rotorua',
+      'itemDescription': 'Dues nits d\'hotel al Rotorua Distinction Rotorua Hotel',
+      'itemValue': 300,
+      'itemFunded': 300,
+      'itemImg': 'gift_hotel_rotorua.jpg'
+    }
+]);
+
+// Run a find command to view items sold on April 4th, 2014.
+db.gifts.find({ itemFunded: { $gte: 0, $lt: 500} });

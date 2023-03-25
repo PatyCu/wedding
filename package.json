@@ -1,46 +1,6 @@
 {
-  "name": "casament",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PatyCu/wedding.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PatyCu/wedding/issues"
-  },
-  "homepage": "https://github.com/PatyCu/wedding#readme",
-  "devDependencies": {
-    "@tailwindcss/forms": "^0.5.3",
-    "@vitejs/plugin-react": "^3.0.1",
-    "autoprefixer": "^10.4.13",
-    "eslint": "^8.32.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-react": "^7.32.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.3",
-    "prettier-plugin-tailwindcss": "^0.2.1",
-    "tailwindcss": "^3.2.4",
-    "vite": "^4.0.4"
-  },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.7.0"
+    "body-parser": "^1.20.2",
+    "helmet": "^6.0.1"
   }
 }
