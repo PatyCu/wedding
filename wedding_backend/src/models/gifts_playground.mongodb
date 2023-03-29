@@ -4,7 +4,7 @@
 // Use Ctrl+Space inside a snippet or a string literal to trigger completions.
 
 // Select the database to use.
-use('mongodbVSCodePlaygroundDB');
+use('WeddingRegistry');
 
 // The drop() command destroys all data from a collection.
 // Make sure you run it against the correct database and collection.
@@ -18,6 +18,7 @@ db.gifts.insertMany([
       'itemDescription': 'Vols d\'anada i tornada en classe turista amb Qatar Airways',
       'itemValue': 1500,
       'itemFunded': 750,
+      "itemFundUnconfirmed": 0,
       'itemImg': 'gift_flights.jpg'
     },
     {
@@ -26,6 +27,7 @@ db.gifts.insertMany([
       'itemDescription': 'Dues nits d\'hotel a Auckand City Hotel',
       'itemValue': 300,
       'itemFunded': 100,
+      "itemFundUnconfirmed": 0,
       'itemImg': 'gift_hotel_auckland.jpg'
     },
     {
@@ -34,6 +36,7 @@ db.gifts.insertMany([
       'itemDescription': 'Hobbiton Movie Set Tour',
       'itemValue': 106,
       'itemFunded': 106,
+      "itemFundUnconfirmed": 0,
       'itemImg': 'gift_hobbiton.jpg'
     },
     {
@@ -42,9 +45,10 @@ db.gifts.insertMany([
       'itemDescription': 'Dues nits d\'hotel al Rotorua Distinction Rotorua Hotel',
       'itemValue': 300,
       'itemFunded': 300,
+      "itemFundUnconfirmed": 0,
       'itemImg': 'gift_hotel_rotorua.jpg'
     }
 ]);
 
-// Run a find command to view items sold on April 4th, 2014.
+// Run a find command to view items with funding up to 500
 db.gifts.find({ itemFunded: { $gte: 0, $lt: 500} });

@@ -8,7 +8,7 @@ var GiftsSchema = new mongoose.Schema({
 	},
 	itemDescription: {
 		type: String,
-		required: true
+		required: false
 	},
     itemValue: {
 		type: Number,
@@ -18,11 +18,15 @@ var GiftsSchema = new mongoose.Schema({
 		type: Number,
 		required: true
 	},
+    itemFundUnconfirmed: {
+        type: Number,
+        required: false
+    },
     itemImg: {
 		type: String,
-		required: true
+		required: false
 	},
 });
 
 // Export the model.
-module.exports = mongoose.model('gifts', GiftsSchema);
+module.exports = mongoose.model('Gifts', GiftsSchema);
