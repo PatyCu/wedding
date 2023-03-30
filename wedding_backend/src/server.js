@@ -36,7 +36,7 @@ app.use(cors({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(require("./routes/gifts/index.js"));
+app.use(require("./routes.js"));
 
 app.listen(PORT, function () {
   console.log(`Express app listening on port ${PORT}`);

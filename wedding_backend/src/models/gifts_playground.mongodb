@@ -51,4 +51,5 @@ db.gifts.insertMany([
 ]);
 
 // Run a find command to view items with funding up to 500
-db.gifts.find({ itemFunded: { $gte: 0, $lt: 500} });
+//db.gifts.find({ itemFunded: { $gte: 0, $lt: 500} });
+db.gifts.find({});
