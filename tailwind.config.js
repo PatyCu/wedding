@@ -5,10 +5,12 @@ module.exports = {
     extend: {
       colors: {
         gray: "#d6d0c1",
+        cobalt: "#002a66",
         black: "#0d0900",
         white: "#fcfcfa",
-        gold: "#e6aa12",
-        "light-gold": "#faf2de",
+        gold: "#d4af37",
+        lightgold: "#eddfaf",
+        "light-gold": "#eddfaf",
       },
       backgroundImage: {
         "travel-background": "url('./img/travel-background.png')",
