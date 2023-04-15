@@ -4,26 +4,31 @@ const HomePage = () => {
   return (
     <div>
       <section className="my-0 mx-auto mt-12 w-full max-w-[1200px] px-10">
-        <h2 className="pb-5 text-center text-2xl md:my-0 md:mx-auto">
-          Gràcies per compartir aquesta celebració amb nosaltres!
+        <h2 className="pb-5 text-center text-2xl text-gold md:my-0 md:mx-auto">
+          L'Oriol i la Paty es casen!
         </h2>
-        <div className="block p-10 leading-7">
+        <div className="block p-0 leading-7 md:p-10">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-            doloribus aspernatur ex quam quos placeat hic expedita tenetur,
-            iste, sint molestiae doloremque tempora deleniti, soluta alias iusto
-            voluptatem perspiciatis odit!
+            Si estàs llegint això és perquè ets una persona important per
+            nosaltres. Tan important, que volem tenir-te al costat quan comencem
+            aquesta nova etapa de la nostra vida.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-            doloribus aspernatur ex quam quos placeat hic expedita tenetur,
-            iste, sint molestiae doloremque tempora deleniti, soluta alias iusto
-            voluptatem perspiciatis odit!
+          <p className="mt-6">
+            Probablement estem tan sorpresos com tu de què estiguem aquí tots
+            plegats. Encara estem més sorpresos de què fem un bodorrio amb tots
+            els ets i uts. Sobre tot la Paty, encara se'n fa creus. Com ens hem
+            de veure, que diria ella.
+          </p>
+          <p className="my-6">
+            Ja que estem aquí aprofitem per donar-vos una mica d'info pràctica i
+            bastanta d'impràctica sobre el Dia D. Des de què esperar de l'event
+            (incloent dresscode si esteu preocupats per saber què posar-vos)
+            fins a què fer-nos arribar com a regal de noces. Endavant!
           </p>
         </div>
       </section>
-      <section className="my-0 mx-auto w-full max-w-[1200px] bg-white p-0 text-center">
-        <picture className="my-0 mx-auto max-h-fit ">
+      <section className="my-0 w-full max-w-[800px] bg-white p-0 text-center">
+        <picture className="my-0 ">
           <source srcSet="img/hero-full.png" media="(min-width: 1200px)" />
           <source srcSet="img/hero-1790.png" media="(min-width: 839px)" />
           <source srcSet="img/hero-1055.png" media="(min-width: 501px)" />
@@ -47,7 +52,7 @@ const HomePage = () => {
           <li key="event">
             <SecondaryNavigation
               title="L'event"
-              link="/"
+              link="/event"
               img="../img/torre-can-parellada.jpg"
             />
           </li>

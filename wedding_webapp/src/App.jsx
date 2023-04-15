@@ -4,11 +4,12 @@ import HomePage from "./HomePage/HomePage";
 import Gift from "./wedding-registry/Gift";
 import RegistryList from "./wedding-registry/RegistryList";
 import Historia from "./HomePage/Historia";
+import Event from "./HomePage/Event";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="bg-gray">
+      <div className="bg-cobalt">
         <header>
           <nav>
             <ul>
@@ -24,7 +25,7 @@ const App = () => {
                 <Link to="/historia">Història</Link>
               </li>
               <li>
-                <Link to="/">L&apos;event</Link>
+                <Link to="/event">L&apos;event</Link>
               </li>
               <li>
                 <Link to="/">Assistència</Link>
@@ -46,6 +47,7 @@ const App = () => {
       <Routes>
         <Route path="/registry-list" element={<RegistryList />} />
         <Route path="/historia" element={<Historia />} />
+        <Route path="/event" element={<Event />} />
         <Route path="/gift/:id" element={<Gift />} />
         <Route path="/" element={<HomePage />} />
       </Routes>

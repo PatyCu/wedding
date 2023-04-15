@@ -60,17 +60,16 @@
   nav a {
     text-decoration: none;
     font-size: 1.2rem;
-    @apply text-gray;
+    @apply text-white;
     padding: 0.5rem;
     text-align: center;
     display: block;
-    @apply bg-white;
+    @apply bg-gold;
     border-radius: 5px;
   }
 
   nav a:hover {
-    @apply bg-light-gold;
-    @apply text-gold;
+    @apply text-white;
   }
 
   section {
@@ -102,8 +101,8 @@
   }
 
   figcaption {
-    /*background-color: rgba(255, 255, 255, 0.8);*/
-    background-color: rgba(250, 242, 222, 0.8);
+    /*background-color: rgba(250, 242, 222, 0.8);*/
+    background-color: rgba(239, 175, 55, 0.8);
     font-size: 1.875rem;
     position: absolute;
     bottom: 0;
@@ -136,12 +135,12 @@
     }
 
     nav a {
-      @apply text-white;
+      @apply text-gold;
       background-color: transparent;
       padding: 0;
     }
     nav a:hover {
-      @apply text-gold;
+      /*@apply text-gold;*/
       background-color: transparent;
     }
 

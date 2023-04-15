@@ -5,7 +5,7 @@ const SecondaryNavigation = ({ title, link, img }) => {
     <figure>
       <img src={img} alt={title} />
       <figcaption>
-        <Link to={link} className="hover:text-gold">
+        <Link to={link} className="hover:text-white">
           {" "}
           {title}
         </Link>
