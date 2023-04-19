@@ -21,9 +21,7 @@ const Historia = () => {
             excusa perquè venia "de fora", va pensar la Paty.
           </p>
           <p className="mt-4">
-            Vam anar a fer una copa de vi primer, que sempre va bé començar
-            light per tenir ruta d'escapatòria fàcil si la cosa no qualla. Però
-            va quallar, i la nit va seguir...
+            Spoiler alert: l'Oriol va arribar tard a cada cita, sens falta.
           </p>
           <p className="mt-8">
             La Paty va sentir una connexió immediata amb aquest noi més català
@@ -47,6 +45,23 @@ const Historia = () => {
             gat Mr Darcy. Al principi, en Darcy no acabava de veure clar haver
             de compartir espai i a la seva humana amb aquest home rialler que
             s'afincava al piset els caps de setmana.
+          </p>
+          <p className="mt-8">
+            Però va passar el temps, i dels caps de setmana vam passar a viure
+            plegats al petit pis del carrer Elisi. Quan diem petit volem dir
+            PETIT: 39 metres quadrats sense cap balcó. Al principi amb allò
+            d'estar enamorats i de què el tamany no importa no se'ns feia tant
+            petit. Però llavors va arribar el 2020, i de convivència vam passar
+            a també ser companys d'oficina. 39 metres quadrats, dos adults i els
+            seus portàtils, un gat-catifa de 7Kg i les 5 ampolles de vi que
+            consumíem cada cap de setmana: el tamany va començar a importar.
+          </p>
+          <p className="mt-8">
+            Fast forward a 2023: el gat-catifa ja no hi és de cos present (però
+            sempre hi serà en esperit), el petit pis tampoc. Ara vivim en un pis
+            força més gran, amb balcó i finestres a un gran parc i espai per ser
+            companys d'oficina (a més de room-mates) sense matar-nos. I un gran
+            petit gat ens omple el pis de pèl i els matins de corredisses.
           </p>
         </div>
       </div>
