@@ -5,6 +5,7 @@ import Gift from "./wedding-registry/Gift";
 import RegistryList from "./wedding-registry/RegistryList";
 import Historia from "./HomePage/Historia";
 import Event from "./HomePage/Event";
+import Assistencia from "./HomePage/Assistencia";
 
 const App = () => {
   return (
@@ -28,7 +29,7 @@ const App = () => {
                 <Link to="/event">L&apos;event</Link>
               </li>
               <li>
-                <Link to="/">Assistència</Link>
+                <Link to="/assistencia">Assistència</Link>
               </li>
               <li>
                 <Link to="/">Com arribar</Link>
@@ -48,6 +49,7 @@ const App = () => {
         <Route path="/registry-list" element={<RegistryList />} />
         <Route path="/historia" element={<Historia />} />
         <Route path="/event" element={<Event />} />
+        <Route path="/assistencia" element={<Assistencia />} />
         <Route path="/gift/:id" element={<Gift />} />
         <Route path="/" element={<HomePage />} />
       </Routes>

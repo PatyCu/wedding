@@ -7,7 +7,7 @@ const Historia = () => {
         Historia
       </h2>
       <div className="flex flex-row flex-wrap">
-        <div className="my-0 mr-10 md:w-2/5 md:w-1/5">
+        <div className="my-0 mr-10 md:w-2/5">
           <img
             src="../img/parella.jpg"
             className="rounded-full shadow-2xl shadow-slate-500"
