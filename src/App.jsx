@@ -6,6 +6,8 @@ import RegistryList from "./wedding-registry/RegistryList";
 import Historia from "./HomePage/Historia";
 import Event from "./HomePage/Event";
 import Assistencia from "./HomePage/Assistencia";
+import ComArribar from "./HomePage/ComArribar";
+import Galeria from "./HomePage/Galeria";
 
 const App = () => {
   return (
@@ -32,13 +34,13 @@ const App = () => {
                 <Link to="/assistencia">Assistència</Link>
               </li>
               <li>
-                <Link to="/">Com arribar</Link>
+                <Link to="/comarribar">Com arribar</Link>
               </li>
               <li>
                 <Link to="/registry-list">Llista de noces</Link>
               </li>
               <li>
-                <Link to="/">Galeria</Link>
+                <Link to="/galeria">Galeria</Link>
               </li>
             </ul>
           </nav>
@@ -50,7 +52,9 @@ const App = () => {
         <Route path="/historia" element={<Historia />} />
         <Route path="/event" element={<Event />} />
         <Route path="/assistencia" element={<Assistencia />} />
+        <Route path="/comarribar" element={<ComArribar />} />
         <Route path="/gift/:id" element={<Gift />} />
+        <Route path="/galeria" element={<Galeria />} />
         <Route path="/" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
