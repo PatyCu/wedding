@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 const Historia = () => {
   return (
     <div id="container" className="my-0 mx-auto w-full p-10">
-      <h2 className="pb-5 text-center text-2xl text-gold md:my-0 md:mx-auto">
-        Historia
-      </h2>
+      <h2 className="md:my-0 md:mx-auto">Historia</h2>
       <div className="flex flex-row flex-wrap">
         <div className="my-0 mr-10 md:w-2/5">
           <img
