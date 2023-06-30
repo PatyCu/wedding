@@ -8,6 +8,10 @@ const Gift = () => {
   const gift = getGiftById(id);
   const prevAndNext = getPrevAndNextGift(id);
 
+  function getImageUrl(name) {
+    return new URL(`../img/${name}`, import.meta.url).href;
+  }
+
   return (
     <div className="my-6 mx-6 lg:mx-auto lg:max-w-[1200px]">
       <Breadcrumb
@@ -18,7 +22,8 @@ const Gift = () => {
       <div className="flex-flow mx-6 mt-10 flex flex-wrap">
         <div className="md:basis-1/2">
           <img
-            src={"/img/".concat(gift.itemImg)}
+            //src={"/img/".concat(gift.itemImg)}
+            src={getImageUrl(gift.itemImg)}
             className=" w-full rounded-lg border border-solid border-gray"
             alt="the current gift"
           />

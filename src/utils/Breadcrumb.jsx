@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import imgLeftArrow from "../img/icon-arrow-left.svg";
+import imgRightArrow from "../img/icon-arrow-right.svg";
+
 const Breadcrumb = ({ backPath, prevPath, nextPath }) => {
   return (
     <div id="breadcrumb" className="flex basis-5/6 flex-row px-6">
@@ -8,7 +11,7 @@ const Breadcrumb = ({ backPath, prevPath, nextPath }) => {
       >
         <span>
           <img
-            src="/img/icon-arrow-left.svg"
+            src={imgLeftArrow}
             alt="left arrow to navigate to the previous gift"
             className="rounded-full border border-solid border-gray group-hover:border-gold"
           />
@@ -19,7 +22,7 @@ const Breadcrumb = ({ backPath, prevPath, nextPath }) => {
         <span>
           <Link to={"/gift/".concat(prevPath)} className="group">
             <img
-              src="/img/icon-arrow-left.svg"
+              src={imgLeftArrow}
               alt="left arrow to navigate to the previous gift"
               className="rounded-full border border-solid border-gray group-hover:border-gold"
             />
@@ -28,7 +31,7 @@ const Breadcrumb = ({ backPath, prevPath, nextPath }) => {
         <span>
           <Link to={"/gift/".concat(nextPath)} className="group">
             <img
-              src="/img/icon-arrow-right.svg"
+              src={imgRightArrow}
               alt="right arrow to navigate to the next gift"
               className="rounded-full border border-solid border-gray group-hover:border-gold"
             />
