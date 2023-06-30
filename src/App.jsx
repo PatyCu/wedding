@@ -8,20 +8,18 @@ import Event from "./HomePage/Event";
 import Assistencia from "./HomePage/Assistencia";
 import ComArribar from "./HomePage/ComArribar";
 import Galeria from "./HomePage/Galeria";
+import imgMonograma from "./img/monograma-clar_300_cropped.png";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="bg-cobalt">
+      <div className="bg-cobalt bg-party-lights-background">
         <header>
           <nav>
             <ul>
               <li>
                 <Link to="/">
-                  <img
-                    src="/img/monograma-clar_300_cropped.png"
-                    alt="Monograma O&P"
-                  />
+                  <img src={imgMonograma} alt="Monograma O&P" />
                 </Link>
               </li>
               <li>

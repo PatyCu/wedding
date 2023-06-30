@@ -31,6 +31,86 @@
       "itemValue": "300€",
       "itemFunded": "300€",
       "itemImg": "gift_hotel_rotorua.jpg"
+    },
+    {
+      "itemKey": "4",
+      "itemTitle": "Hotel a Tongariro",
+      "itemDescription": "Dues nits d'hotel al Skotel Alpine Resort",
+      "itemValue": "300€",
+      "itemFunded": "300€",
+      "itemImg": "gift_hotel_tongariro.jpg"
+    },
+    {
+      "itemKey": "5",
+      "itemTitle": "Hotel a Martinborough",
+      "itemDescription": "Una nit d'hotel al The Martinborough Hotel",
+      "itemValue": "300€",
+      "itemFunded": "300€",
+      "itemImg": "gift_hotel_martinborough.jpg"
+    },
+    {
+      "itemKey": "6",
+      "itemTitle": "Hotel a Wellington",
+      "itemDescription": "Una nit d'hotel al Copthorne Hotel Oriental Bay",
+      "itemValue": "300€",
+      "itemFunded": "300€",
+      "itemImg": "gift_hotel_wellington.jpg"
+    },
+    {
+      "itemKey": "7",
+      "itemTitle": "Hotel a Kaikoura",
+      "itemDescription": "Una nit d'hotel al Bellavista Kaikoura Motel",
+      "itemValue": "300€",
+      "itemFunded": "300€",
+      "itemImg": "gift_hotel_kaikoura.jpg"
+    },
+    {
+      "itemKey": "8",
+      "itemTitle": "Hotel a Kaiteriteri",
+      "itemDescription": "Dues nits d'hotel al Kimi Ora Eco Resort",
+      "itemValue": "300€",
+      "itemFunded": "300€",
+      "itemImg": "gift_hotel_rotorua.jpg"
+    },
+    {
+      "itemKey": "9",
+      "itemTitle": "Hotel a Punaikiki",
+      "itemDescription": "Una nit d'hotel al Ocean View Retreat",
+      "itemValue": "300€",
+      "itemFunded": "300€",
+      "itemImg": "gift_hotel_rotorua.jpg"
+    },
+    {
+      "itemKey": "10",
+      "itemTitle": "Hotel a Franz Josef",
+      "itemDescription": "Una nit d'hotel al Bellavista Franz Josef Motel",
+      "itemValue": "300€",
+      "itemFunded": "300€",
+      "itemImg": "gift_hotel_rotorua.jpg"
+    },
+    {
+      "itemKey": "11",
+      "itemTitle": "Hotel a Wanaka",
+      "itemDescription": "Una nit d'hotel al Oakridge Resort Wanaka",
+      "itemValue": "300€",
+      "itemFunded": "300€",
+      "itemImg": "gift_hotel_rotorua.jpg"
+    },
+    {
+      "itemKey": "12",
+      "itemTitle": "Hotel a Queenstown",
+      "itemDescription": "3 nits d'hotel al Heartland Hotel Queenstown",
+      "itemValue": "300€",
+      "itemFunded": "300€",
+      "itemImg": "gift_hotel_rotorua.jpg"
+    },
+    {
+      "itemKey": "13",
+      "itemTitle": "Hotel a Christchurch",
+      "itemDescription": "Una nit d'hotel al Heartland Hotel Cotsworld",
+      "itemValue": "300€",
+      "itemFunded": "300€",
+      "itemImg": "gift_hotel_rotorua.jpg"
     }
   ]
 }

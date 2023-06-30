@@ -1,8 +1,15 @@
+import imgIconClock from "../img/icon-clock.png";
+import imgIconCheers from "../img/icon-cheers.png";
+import imgIconSnacks from "../img/icon-snacks.png";
+import imgIconDinner from "../img/icon-dinner.png";
+import imgIconParty from "../img/icon-party.png";
+import imgIconBackache from "../img/icon-backache.png";
+
 const Event = () => {
   return (
     <div id="container" className="my-0 mx-auto w-full p-10">
       <h2 className="pb-5 text-center text-2xl text-gold md:my-0 md:mx-auto">
-        L'event
+        L&apos;event
       </h2>
       <div className="mt-4">
         <h3 className="pb-5 text-left text-xl text-gold md:my-0 md:mx-auto">
@@ -13,11 +20,11 @@ const Event = () => {
           seu) i amb un somriure. Nosaltres anirem mudats, això si.
         </p>
         <p className="mt-4">
-          A tenir en compte: el primer brindis i l'aperitiu el farem a l'aire
-          lliure, després passarem a estar sota cobert. L'event serà a l'Octubre
-          i tot i que si els darrers anys són guia d'algo encara farà caloret,
-          recomanem portar alguna peça de roba per abrigar-nos quan comenci a
-          refrescar per la nit.
+          A tenir en compte: el primer brindis i l&apos;aperitiu el farem a
+          l&apos;aire lliure, després passarem a estar sota cobert. L&apos;event
+          serà a l&apos;Octubre i tot i que si els darrers anys són guia
+          d&apos;algo encara farà caloret, recomanem portar alguna peça de roba
+          per abrigar-nos quan comenci a refrescar per la nit.
         </p>
       </div>
       <div className="mt-4">
@@ -25,8 +32,8 @@ const Event = () => {
           Autocars
         </h3>
         <p>
-          Oferim servei d'autocars (cortesia d'Autocars Vendrell) per anar i
-          tornar cap a l'Ordal en dues rutesdiferents:
+          Oferim servei d&apos;autocars (cortesia d&apos;Autocars Vendrell) per
+          anar i tornar cap a l&apos;Ordal en dues rutesdiferents:
         </p>
         <u className="list-inside list-disc no-underline">
           <li className="ml-4">
@@ -41,7 +48,7 @@ const Event = () => {
           posarem per aquí.
         </p>
         <p className="mt-4">
-          Si voleu reservar seient en alguna d'aquestes rutes si us plau
+          Si voleu reservar seient en alguna d&apos;aquestes rutes si us plau
           aviseu-nos tan aviat com sigui possible!
         </p>
       </div>
@@ -56,7 +63,8 @@ const Event = () => {
         </p>
         <p className="mt-4">
           Amb aquesta informació ens assegurarem que tothom pugui gaudir de la
-          festa i d'un bon sopar, sense ensurts i sense que ningú passi gana!
+          festa i d&apos;un bon sopar, sense ensurts i sense que ningú passi
+          gana!
         </p>
       </div>
       <div className="mt-4">
@@ -65,32 +73,52 @@ const Event = () => {
         </h3>
         <ul className="flex-center mx-auto flex flex-row flex-wrap content-center items-center gap-4 align-middle">
           <li className="w-fit basis-2/12 justify-items-center">
-            <img src="../img/icon-clock.png" className="mx-auto w-24" />
+            <img src={imgIconClock} className="mx-auto w-10" alt="clock icon" />
           </li>
           <li className="basis-2/12">18:30h</li>
-          <li className="basis-7/12">Arribada a la Torre de Can Parellada</li>
+          <li className="basis-6/12">Arribada a la Torre de Can Parellada</li>
           <li className="w-fit basis-2/12 justify-items-center">
-            <img src="../img/icon-cheers.png" className="mx-auto w-24" />
+            <img
+              src={imgIconCheers}
+              className="mx-auto w-24"
+              alt="champagne glasses icon"
+            />
           </li>
           <li className="basis-2/12">18:45h</li>
           <li className="basis-6/12">Brindem per nosaltres</li>
           <li className="w-fit basis-2/12 justify-items-center">
-            <img src="../img/icon-snacks.png" className="mx-auto w-24" />
+            <img
+              src={imgIconSnacks}
+              className="mx-auto w-24"
+              alt="snacks icon"
+            />
           </li>
           <li className="basis-2/12">19:00h</li>
           <li className="basis-6/12">Aperitiu</li>
           <li className="w-fit basis-2/12 justify-items-center">
-            <img src="../img/icon-dinner.png" className="mx-auto w-24" />
+            <img
+              src={imgIconDinner}
+              className="mx-auto w-24"
+              alt="dinner plate icon"
+            />
           </li>
           <li className="basis-2/12">20:30h</li>
           <li className="basis-6/12">Sopar</li>
           <li className="w-fit basis-2/12 justify-items-center">
-            <img src="../img/icon-party.png" className="mx-auto w-24" />
+            <img
+              src={imgIconParty}
+              className="mx-auto w-24"
+              alt="disco ball icon"
+            />
           </li>
           <li className="basis-2/12">22:30h</li>
           <li className="basis-6/12">Party!</li>
           <li className="w-fit basis-2/12 justify-items-center">
-            <img src="../img/icon-backache.png" className="mx-auto w-24" />
+            <img
+              src={imgIconBackache}
+              className="mx-auto w-24"
+              alt="person with back ache icon"
+            />
           </li>
           <li className="basis-2/12">01:30h</li>
           <li className="basis-6/12">...Fins que el cos aguanti</li>
