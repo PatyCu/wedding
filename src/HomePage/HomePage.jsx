@@ -3,6 +3,12 @@ import imgHeroFull from "../img/hero-full.png";
 import imgHeroMD from "../img/hero-1790.png";
 import imgHeroSD from "../img/hero-1055.png";
 import imgHeroXSD from "../img/hero-480.png";
+import imgParella from "../img/parella.jpg";
+import imgEvent from "../img/torre-can-parellada.jpg";
+import imgAssistencia from "../img/assistencia.jpg";
+import imgComArribar from "../img/how-to-get-there.jpg";
+import imgLlista from "../img/suitcase.jpg";
+import imgGaleria from "../img/coming_soon.png";
 
 const HomePage = () => {
   return (
@@ -51,43 +57,35 @@ const HomePage = () => {
             <SecondaryNavigation
               title="Història"
               link="/historia"
-              img="../img/parella.jpg"
+              img={imgParella}
             />
           </li>
           <li key="event">
-            <SecondaryNavigation
-              title="L'event"
-              link="/event"
-              img="../img/torre-can-parellada.jpg"
-            />
+            <SecondaryNavigation title="L'event" link="/event" img={imgEvent} />
           </li>
           <li key="rsvp">
             <SecondaryNavigation
               title="Confirmar Assistència"
               link="/"
-              img="../img/assistencia.jpg"
+              img={imgAssistencia}
             />
           </li>
           <li key="arribar">
             <SecondaryNavigation
               title="Com arribar"
               link="/"
-              img="../img/how-to-get-there.jpg"
+              img={imgComArribar}
             />
           </li>
           <li key="registry">
             <SecondaryNavigation
               title="Llista de noces"
               link="/wedding-registry"
-              img="../img/suitcase.jpg"
+              img={imgLlista}
             />
           </li>
           <li key="gallery">
-            <SecondaryNavigation
-              title="Galeria"
-              link="/"
-              img="../img/coming_soon.png"
-            />
+            <SecondaryNavigation title="Galeria" link="/" img={imgGaleria} />
           </li>
         </ul>
       </section>

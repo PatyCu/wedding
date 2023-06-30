@@ -1,4 +1,6 @@
 import GiftList from "./GiftList";
+import imgHero from "../img/new_zealand_cover_w_2400.jpg";
+import imgParella from "../img/parella.jpg";
 
 const RegistryList = () => {
   return (
@@ -6,7 +8,7 @@ const RegistryList = () => {
       <div className="m-0 p-0">
         <div className="relative">
           <img
-            src="../img/new_zealand_cover_w_2400.jpg"
+            src={imgHero}
             alt="Snowed mountains and a lake in a New Zealander landscape"
             className="w-full lg:max-h-[60rem]"
           />
@@ -18,7 +20,7 @@ const RegistryList = () => {
           </div>
           <div className="absolute bottom-4 left-4 w-36">
             <img
-              src="../img/parella.jpg"
+              src={imgParella}
               className="rounded-full border-2 border-solid border-white"
               alt="selfie de l'Oriol i la Paty junts"
             />
