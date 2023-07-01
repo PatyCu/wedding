@@ -5,14 +5,14 @@ const Historia = () => {
     <div id="container" className="my-0 mx-auto w-full p-10">
       <h2 className="md:my-0 md:mx-auto">Historia</h2>
       <div className="flex flex-row flex-wrap">
-        <div className="my-0 mr-10 md:w-2/5">
+        <div className="my-0 px-5 md:w-2/6 lg:max-w-xl">
           <img
             src={imgParella}
             className="rounded-full shadow-2xl shadow-slate-500"
             alt="selfie de l'Oriol i la Paty junts"
           />
         </div>
-        <div className="mt-10 md:w-3/5">
+        <div className="mt-10 ml-10 md:w-3/6">
           <p>
             Ens vam conèixer ara farà 7 anys, el 14 d&apos;Octubre del 2016.
           </p>

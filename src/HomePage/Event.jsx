@@ -7,7 +7,7 @@ import imgIconBackache from "../img/icon-backache.png";
 
 const Event = () => {
   return (
-    <div id="container" className="my-0 mx-auto w-full p-10">
+    <div id="container" className="my-0 mx-auto max-w-[1200px] p-10">
       <h2 className="pb-5 text-center text-2xl text-gold md:my-0 md:mx-auto">
         L&apos;event
       </h2>
