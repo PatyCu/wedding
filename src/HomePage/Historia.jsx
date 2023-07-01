@@ -49,13 +49,13 @@ const Historia = () => {
           <p className="mt-8">
             Però va passar el temps, i dels caps de setmana vam passar a viure
             plegats al petit pis del carrer Elisi. Quan diem petit volem dir
-            PETIT: 39 metres quadrats sense cap balcó. Al principi amb allò
-            d&apos;estar enamorats i de què el tamany no importa no se&apos;ns
-            feia tant petit. Però llavors va arribar el 2020, i de convivència
-            vam passar a també ser companys d&apos;oficina. 39 metres quadrats,
-            dos adults i els seus portàtils, un gat-catifa de 7Kg i les 5
-            ampolles de vi que consumíem cada cap de setmana: el tamany va
-            començar a importar.
+            <strong> PETIT</strong>: 39 metres quadrats sense cap balcó. Al
+            principi amb allò d&apos;estar enamorats i de què el tamany no
+            importa no se&apos;ns feia tant petit. Però llavors va arribar el
+            2020 i el maleït COVID, i de convivència vam passar a també ser
+            companys d&apos;oficina. 39 metres quadrats, dos adults i els seus
+            portàtils, un gat-catifa de 7Kg i les 5 ampolles de vi que consumíem
+            cada cap de setmana: el tamany va començar a importar.
           </p>
           <p className="mt-8">
             Fast forward a 2023: el gat-catifa ja no hi és de cos present (però
