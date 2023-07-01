@@ -4,6 +4,7 @@ import imgIconSnacks from "../img/icon-snacks.png";
 import imgIconDinner from "../img/icon-dinner.png";
 import imgIconParty from "../img/icon-party.png";
 import imgIconBackache from "../img/icon-backache.png";
+import imgTorre from "../img/torre_dia.jpg";
 
 const Event = () => {
   return (
@@ -19,21 +20,36 @@ const Event = () => {
           El dress code és el que qualsevol boda: ben guap@s (cadascú se sap lo
           seu) i amb un somriure. Nosaltres anirem mudats, això si.
         </p>
-        <p className="mt-4">
-          A tenir en compte: el primer brindis i l&apos;aperitiu el farem a
-          l&apos;aire lliure, després passarem a estar sota cobert. L&apos;event
-          serà a l&apos;Octubre i tot i que si els darrers anys són guia
-          d&apos;algo encara farà caloret, recomanem portar alguna peça de roba
-          per abrigar-nos quan comenci a refrescar per la nit.
-        </p>
+        <div className="mt-4">
+          El primer brindis i l&apos;aperitiu el farem a l&apos;aire lliure a un
+          gran pati amb terra de sorra, després passarem a estar sota cobert.
+          <img
+            src={imgTorre}
+            alt="Pati de sorra de la Torre Can Parellada"
+            className="p-8"
+          />
+          <p className="mt-4">Això si fa bo, és clar, sinó cap dins.</p>
+          <p className="mt-4">
+            A tenir en compte: l&apos;event serà a l&apos;Octubre i tot i que si
+            els darrers anys són guia d&apos;algo encara farà caloret, recomanem
+            portar alguna peça de roba per abrigar-nos quan comenci a refrescar
+            per la nit.
+          </p>
+        </div>
       </div>
       <div className="mt-4">
         <h3 className="pb-5 text-left text-xl text-gold md:my-0 md:mx-auto">
           Autocars
         </h3>
         <p>
-          Oferim servei d&apos;autocars (cortesia d&apos;Autocars Vendrell) per
-          anar i tornar cap a l&apos;Ordal en dues rutesdiferents:
+          Oferim servei d&apos;autocars (cortesia d&apos;
+          <a
+            href="https://www.autocarsvendrell.com/"
+            className="underline hover:text-gold"
+          >
+            Autocars Vendrell
+          </a>
+          ) per anar i tornar cap a l&apos;Ordal en dues rutesdiferents:
         </p>
         <u className="list-inside list-disc no-underline">
           <li className="ml-4">
