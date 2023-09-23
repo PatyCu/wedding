@@ -19,30 +19,42 @@ const Concurs = () => {
         <ul>
           <li>
             <div>
-              <b>Instal·lar l&apos;app WedShoots al teu mòbil.</b>
-              <img
-                src={imgWedshoots}
-                className="mx-auto w-24"
-                alt="WedShoots app icon"
-              />
-              Descarrega l&apos;aplicació de{" "}
-              <a href="http://www.wedshoots.com">WedShoots</a> o busca-la a la
-              teva botiga d&apos;aplicacions.
+              <p>
+                <b>Instal·lar l&apos;app WedShoots al teu mòbil.</b>
+              </p>
+              <p>
+                <img
+                  src={imgWedshoots}
+                  className="mx-auto w-24"
+                  alt="WedShoots app icon"
+                />
+              </p>
+              <p>
+                Descarrega l&apos;aplicació de{" "}
+                <a href="http://www.wedshoots.com">WedShoots</a> o busca-la a la
+                teva botiga d&apos;aplicacions.
+              </p>
             </div>
           </li>
           <li>
             <div>
-              <b>Uneix-te al nostre àlbum</b>
-              Obre Wedshoots, posa el teu nom i escaneja aquest codi QR
+              <p>
+                <b>Uneix-te al nostre àlbum</b>
+              </p>
+              <p>Obre Wedshoots, posa el teu nom i escaneja aquest codi QR</p>
               <img src={imgQRCode} className="mx-auto w-24" alt="QR Code" />
-              També pots entrar a l&apos;app i buscar l&apos;àlbum amb el codi{" "}
-              <b>ESff6d5fad</b>
+              <p>
+                També pots entrar a l&apos;app i buscar l&apos;àlbum amb el codi{" "}
+              </p>
+              <p className="mx-auto w-fit bg-gray p-1 text-center align-middle">
+                <b>ESff6d5fad</b>
+              </p>
             </div>
           </li>
           <li>
             Fes fotos durant el dia de la boda i pujar-les a l&apos;àlbum.
           </li>
-          <li>Esperar a veure si ets un dels guanyadors!</li>
+          <li>Espera a veure si ets un dels guanyadors!</li>
         </ul>
       </div>
     </div>
