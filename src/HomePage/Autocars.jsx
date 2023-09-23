@@ -36,14 +36,29 @@ const Autocars = () => {
             <th>Trobada</th>
           </tr>
           <tr>
-            <td>El Pla del Penedès</td>
-            <td>16:30h</td>
+            <td>El Pla</td>
+            <td>17:20h</td>
             <td>Poliesportiu</td>
           </tr>
           <tr>
-            <td>Vilafranca del Penedès</td>
-            <td>17:00h</td>
-            <td>Estació d&apos;autobusos</td>
+            <td>Puigdàlber</td>
+            <td>17:30h</td>
+            <td>Carretera</td>
+          </tr>
+          <tr>
+            <td>Vilafranca</td>
+            <td>17:45h</td>
+            <td>Antiga Hisenda c/Santa Clara</td>
+          </tr>
+          <tr>
+            <td>Cantallops</td>
+            <td>18:00h</td>
+            <td>Parada de bus</td>
+          </tr>
+          <tr>
+            <td>Sant Pau d&apos;Ordal</td>
+            <td>18:10h</td>
+            <td>Parada de bus</td>
           </tr>
         </table>
       </div>
@@ -62,7 +77,7 @@ const Autocars = () => {
           </tr>
           <tr>
             <td>Barcelona</td>
-            <td>17:30h</td>
+            <td>17:15h</td>
             <td>Pl. Espanya - Hotel Catalonia</td>
           </tr>
         </table>
