@@ -3,12 +3,13 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
 import Gift from "./wedding-registry/Gift";
 import RegistryList from "./wedding-registry/RegistryList";
-import Historia from "./HomePage/Historia";
 import Event from "./HomePage/Event";
-import Assistencia from "./HomePage/Assistencia";
 import ComArribar from "./HomePage/ComArribar";
-import Galeria from "./HomePage/Galeria";
 import imgMonograma from "./img/monograma-clar_300_cropped.png";
+import Autocars from "./HomePage/Autocars";
+//import Historia from "./HomePage/Historia";
+//import Assistencia from "./HomePage/Assistencia";
+//import Galeria from "./HomePage/Galeria";
 
 const App = () => {
   return (
@@ -23,13 +24,10 @@ const App = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/historia">Història</Link>
-              </li>
-              <li>
                 <Link to="/event">L&apos;event</Link>
               </li>
               <li>
-                <Link to="/assistencia">Assistència</Link>
+                <Link to="/autocars">Autocars</Link>
               </li>
               <li>
                 <Link to="/comarribar">Com arribar</Link>
@@ -37,9 +35,16 @@ const App = () => {
               <li>
                 <Link to="/registry-list">Llista de noces</Link>
               </li>
+              {/* 
+              <li>
+                <Link to="/historia">Història</Link>
+              </li>
+              <li>
+                <Link to="/assistencia">Assistència</Link>
+              </li>
               <li>
                 <Link to="/galeria">Galeria</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </header>
@@ -47,12 +52,13 @@ const App = () => {
 
       <Routes>
         <Route path="/registry-list" element={<RegistryList />} />
-        <Route path="/historia" element={<Historia />} />
         <Route path="/event" element={<Event />} />
-        <Route path="/assistencia" element={<Assistencia />} />
+        <Route path="/autocars" element={<Autocars />} />
         <Route path="/comarribar" element={<ComArribar />} />
         <Route path="/gift/:id" element={<Gift />} />
-        <Route path="/galeria" element={<Galeria />} />
+        {/* <Route path="/historia" element={<Historia />} />
+        <Route path="/assistencia" element={<Assistencia />} />
+        <Route path="/galeria" element={<Galeria />} /> */}
         <Route path="/" element={<HomePage />} />
       </Routes>
     </BrowserRouter>

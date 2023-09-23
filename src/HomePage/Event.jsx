@@ -49,7 +49,7 @@ const Event = () => {
           >
             Autocars Vendrell
           </a>
-          ) per anar i tornar cap a l&apos;Ordal en dues rutesdiferents:
+          ) per anar i tornar cap a l&apos;Ordal en dues rutes diferents:
         </p>
         <u className="list-inside list-disc no-underline">
           <li className="ml-4">
