@@ -3,7 +3,7 @@ import imgQRCode from "../img/icon-qrcode.jpg";
 
 const Concurs = () => {
   return (
-    <div id="container" className="my-0 mx-auto max-w-[1200px] p-10">
+    <div id="container-concurs" className="my-0 mx-auto max-w-[1200px] p-10">
       <h2 className="pb-5 text-center text-2xl text-gold md:my-0 md:mx-auto">
         Concurs de fotografia!
       </h2>
@@ -36,7 +36,7 @@ const Concurs = () => {
               </p>
             </div>
           </li>
-          <li>
+          <li className="mt-4">
             <div>
               <p>
                 <b>Uneix-te al nostre àlbum</b>
@@ -46,12 +46,12 @@ const Concurs = () => {
               <p>
                 També pots entrar a l&apos;app i buscar l&apos;àlbum amb el codi{" "}
               </p>
-              <p className="mx-auto w-fit bg-gray p-1 text-center align-middle">
+              <p className="mx-auto mt-2 w-fit bg-gray p-1 text-center align-middle">
                 <b>ESff6d5fad</b>
               </p>
             </div>
           </li>
-          <li>
+          <li className="mt-4">
             Fes fotos durant el dia de la boda i pujar-les a l&apos;àlbum.
           </li>
           <li>Espera a veure si ets un dels guanyadors!</li>

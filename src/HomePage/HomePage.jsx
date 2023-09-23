@@ -12,7 +12,7 @@ import imgLlista from "../img/suitcase.jpg";
 
 const HomePage = () => {
   return (
-    <div>
+    <div id="container-home">
       <section className="my-0 mx-auto mt-12 w-full max-w-[1200px] px-10">
         <h2 className="pb-5 text-center text-2xl text-gold md:my-0 md:mx-auto">
           L&apos;Oriol i la Paty es casen!
