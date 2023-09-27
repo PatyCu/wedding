@@ -70,7 +70,11 @@ const Event = () => {
         <p className="mt-2 mb-4 italic">* Tots els horaris són aproximats.</p>
         <ul className="flex-center mx-auto flex flex-row flex-wrap content-center items-center gap-4 align-middle">
           <li className="w-fit basis-2/12 justify-items-center">
-            <img src={imgIconClock} className="mx-auto w-10" alt="clock icon" />
+            <img
+              src={imgIconClock}
+              className="mx-auto w-[4.5rem]"
+              alt="clock icon"
+            />
           </li>
           <li className="basis-2/12">18:30h</li>
           <li className="basis-6/12">Arribada a la Torre de Can Parellada</li>
