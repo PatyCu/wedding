@@ -129,7 +129,7 @@
   /******** TABLETS **********/
   @screen md {
     header {
-      padding: 3rem;
+      padding: 1rem;
     }
 
     nav ul {
@@ -170,6 +170,7 @@
   /******** DESKTOP **********/
   @screen lg {
     /* navigation - logo in the center */
+    /*
     nav ul {
       justify-content: flex-end;
     }
@@ -191,7 +192,7 @@
     nav li:nth-child(7) {
       order: 3;
     }
-
+*/
     section li {
       flex-basis: 32.5%;
     }
