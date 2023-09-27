@@ -99,7 +99,7 @@ const Event = () => {
               alt="dinner plate icon"
             />
           </li>
-          <li className="basis-2/12">20:30h</li>
+          <li className="basis-2/12">21:00h</li>
           <li className="basis-6/12">Sopar</li>
           <li className="w-fit basis-2/12 justify-items-center">
             <img
@@ -108,7 +108,7 @@ const Event = () => {
               alt="disco ball icon"
             />
           </li>
-          <li className="basis-2/12">22:30h</li>
+          <li className="basis-2/12">23:30h</li>
           <li className="basis-6/12">Party!</li>
           <li className="w-fit basis-2/12 justify-items-center">
             <img
@@ -117,7 +117,7 @@ const Event = () => {
               alt="person with back ache icon"
             />
           </li>
-          <li className="basis-2/12">01:30h</li>
+          <li className="basis-2/12">02:30h</li>
           <li className="basis-6/12">...Fins que el cos aguanti</li>
         </ul>
       </div>
