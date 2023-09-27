@@ -7,9 +7,9 @@ import imgEvent from "../img/torre-can-parellada.jpg";
 import imgComArribar from "../img/how-to-get-there.jpg";
 import imgAutocars from "../img/autocars.jpg";
 import imgCamera from "../img/camera.jpg";
+import imgLlista from "../img/suitcase.jpg";
 //import imgParella from "../img/parella.jpg";
 //import imgAssistencia from "../img/assistencia.jpg";
-//import imgLlista from "../img/suitcase.jpg";
 //import imgGaleria from "../img/coming_soon.png";
 
 const HomePage = () => {
@@ -80,6 +80,13 @@ const HomePage = () => {
               img={imgCamera}
             />
           </li>
+          <li key="registry">
+            <SecondaryNavigation
+              title="Llista de noces"
+              link="/wedding-registry"
+              img={imgLlista}
+            />
+          </li>
           {/* <li key="historia">
             <SecondaryNavigation
               title="Història"
@@ -93,13 +100,7 @@ const HomePage = () => {
               link="/"
               img={imgAssistencia}
             />
-            <li key="registry">
-            <SecondaryNavigation
-              title="Llista de noces"
-              link="/wedding-registry"
-              img={imgLlista}
-            />
-          </li>
+            
           </li>
           <li key="gallery">
             <SecondaryNavigation title="Galeria" link="/" img={imgGaleria} />

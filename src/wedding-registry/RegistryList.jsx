@@ -1,6 +1,7 @@
-import GiftList from "./GiftList";
+//import GiftList from "./GiftList";
 import imgHero from "../img/new_zealand_cover_w_2400.jpg";
 import imgParella from "../img/parella.jpg";
+import imgCompte from "../img/compte.png";
 
 const RegistryList = () => {
   return (
@@ -32,16 +33,27 @@ const RegistryList = () => {
           Qualsevol regal que ens vulgueu fer anirà destinat a gaudir de la
           nostra lluna de mel: un viatge de 20 dies per Nova Zelanda
         </p>
-        <p>
-          Disclaimer: no podreu fer el regal des d&apos;aquí, però si us fa
-          gràcia especificar per a què voleu que dediquem el vostre regal us
-          tindrem en ment quan l&apos;estem gaudint (i quan paguem, clar){" "}
+        <p className="m-4 border-l p-2">
+          <strong>Disclaimer:</strong> no podreu fer el regal des d&apos;aquí,
+          però si us fa gràcia especificar per a què voleu que dediquem el
+          vostre regal us tindrem en ment quan l&apos;estem gaudint (i quan
+          paguem, clar).
         </p>
       </section>
       <section className="my-10">
+        <p>
+          Us agraïrem de tot cor qualsevol aportació que vulgueu fer per
+          ajudar-nos a fer realitat aquest viatge. Així que si us fa gràcia,
+          aquí teniu el nostre número de compte:
+        </p>
+        <p className="m-4 w-fit rounded-lg border-2 border-solid border-lightgold p-2">
+          <img src={imgCompte} alt="Compte corrent" className="mx-auto w-52" />
+        </p>
+      </section>
+      {/* <section className="my-10">
         <h2 className="pb-5 text-2xl md:my-0 md:mx-auto">Regals</h2>
         <GiftList />
-      </section>
+      </section> */}
     </div>
   );
 };

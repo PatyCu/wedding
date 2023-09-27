@@ -36,7 +36,9 @@ const App = () => {
               <li>
                 <Link to="/wedshoots">Wedshoots</Link>
               </li>
-
+              <li>
+                <Link to="/registry-list">Llista de noces</Link>
+              </li>
               {/* 
               <li>
                 <Link to="/historia">Història</Link>
