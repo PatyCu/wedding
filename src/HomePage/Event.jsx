@@ -65,8 +65,9 @@ const Event = () => {
       </div>
       <div className="mt-4">
         <h3 className="pb-5 text-left text-xl text-gold md:my-0 md:mx-auto">
-          Timeline
+          Timeline*
         </h3>
+        <p className="mt-2 mb-4 italic">* Tots els horaris són aproximats.</p>
         <ul className="flex-center mx-auto flex flex-row flex-wrap content-center items-center gap-4 align-middle">
           <li className="w-fit basis-2/12 justify-items-center">
             <img src={imgIconClock} className="mx-auto w-10" alt="clock icon" />
