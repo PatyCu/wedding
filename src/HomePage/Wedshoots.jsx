@@ -1,15 +1,13 @@
 import imgWedshoots from "../img/icon-wedshoots.png";
 import imgQRCode from "../img/icon-qrcode.jpg";
 
-const Concurs = () => {
+const Wedshoots = () => {
   return (
     <div
       id="container-concurs"
       className="my-0 mx-auto max-w-[600px] p-10 text-center"
     >
-      <h2 className="pb-5 text-2xl text-gold md:my-0 md:mx-auto">
-        Concurs de fotografia!
-      </h2>
+      <h2 className="pb-5 text-2xl text-gold md:my-0 md:mx-auto">Wedshoots</h2>
       <p>
         Volem que ens ajudis a immortalitzar el nostre dia especial. Per això et
         proposem un concurs de fotografia. Els guanyadors rebran un premi
@@ -66,4 +64,4 @@ const Concurs = () => {
   );
 };
 
-export default Concurs;
+export default Wedshoots;

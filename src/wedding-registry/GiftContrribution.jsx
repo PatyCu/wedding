@@ -1,7 +1,10 @@
+import imgOriol from "../img/oriol_profile.jpg";
+import imgPaty from "../img/paty_profile.jpg";
+
 const GiftContribution = ({ amountToContribute, handleAccepted }) => (
   <div className="mt-6">
     <h2 className="text-2xl font-bold">
-      Accepted Contribution of {amountToContribute}€
+      Gràcies per la teva contribució de {amountToContribute}€
     </h2>
     <div className="p-4">
       <span className="">
@@ -15,7 +18,7 @@ const GiftContribution = ({ amountToContribute, handleAccepted }) => (
           <li className="basis-full rounded-3xl border border-solid border-black border-opacity-50 text-center text-sm shadow-lg after:clear-both">
             <div className="flex flex-row flex-wrap ">
               <img
-                src="/img/oriol_profile.jpg"
+                src={imgOriol}
                 className="my-6 ml-4 inline-block h-auto w-full max-w-[100px] basis-1/2 rounded-full"
                 alt="Oriol somrient ben abrigat a la neu"
               />
@@ -42,7 +45,7 @@ const GiftContribution = ({ amountToContribute, handleAccepted }) => (
           <li className="basis-full rounded-3xl border border-solid border-black border-opacity-50 text-center text-sm shadow-lg after:clear-both">
             <div className="flex flex-row flex-wrap">
               <img
-                src="/img/oriol_profile.jpg"
+                src={imgPaty}
                 className="my-6 ml-4 inline-block h-auto w-full max-w-[100px] basis-1/2 rounded-full"
                 alt="Oriol somrient ben abrigat a la neu"
               />

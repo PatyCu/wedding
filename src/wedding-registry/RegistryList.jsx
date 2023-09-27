@@ -28,6 +28,17 @@ const RegistryList = () => {
         </div>
       </div>
       <section className="my-10">
+        <p>
+          Qualsevol regal que ens vulgueu fer anirà destinat a gaudir de la
+          nostra lluna de mel: un viatge de 20 dies per Nova Zelanda
+        </p>
+        <p>
+          Disclaimer: no podreu fer el regal des d&apos;aquí, però si us fa
+          gràcia especificar per a què voleu que dediquem el vostre regal us
+          tindrem en ment quan l&apos;estem gaudint (i quan paguem, clar){" "}
+        </p>
+      </section>
+      <section className="my-10">
         <h2 className="pb-5 text-2xl md:my-0 md:mx-auto">Regals</h2>
         <GiftList />
       </section>

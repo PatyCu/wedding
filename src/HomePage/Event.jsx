@@ -5,6 +5,7 @@ import imgIconDinner from "../img/icon-dinner.png";
 import imgIconParty from "../img/icon-party.png";
 import imgIconBackache from "../img/icon-backache.png";
 import imgTorre from "../img/torre_dia.jpg";
+import { Link } from "react-router-dom";
 
 const Event = () => {
   return (
@@ -39,48 +40,27 @@ const Event = () => {
       </div>
       <div className="mt-4">
         <h3 className="pb-5 text-left text-xl text-gold md:my-0 md:mx-auto">
-          Autocars
+          Concurs de fotografia
         </h3>
         <p>
-          Oferim servei d&apos;autocars (cortesia d&apos;
-          <a
-            href="https://www.autocarsvendrell.com/"
-            className="underline hover:text-gold"
-          >
-            Autocars Vendrell
-          </a>
-          ) per anar i tornar cap a l&apos;Ordal en dues rutes diferents:
+          Per introduir una mica (més) d&apos;emoció al assunto, farem un petit
+          concurs de fotografia!
         </p>
-        <u className="list-inside list-disc no-underline">
-          <li className="ml-4">
-            <b>Ruta Penedès:</b> El Pla - Vilafranca - Ordal
-          </li>
-          <li className="ml-4">
-            <b>Ruta Barcelona:</b> Barcelona - Ordal
-          </li>
-        </u>
-        <p className="mt-4">
-          Encara no sabem els horaris, en quant els tinguem us avisarem i els
-          posarem per aquí.
-        </p>
-        <p className="mt-4">
-          Si voleu reservar seient en alguna d&apos;aquestes rutes si us plau
-          aviseu-nos tan aviat com sigui possible!
-        </p>
-      </div>
-      <div className="mt-4">
-        <h3 className="pb-5 text-left text-xl text-gold md:my-0 md:mx-auto">
-          Al·lèrgies i altres restriccions alimentàries
-        </h3>
         <p>
-          Necessitem que ens comuniqueu qualsevol al·lèrgia, intolerància, o
-          restricció alimentària que tingueu per tal que informem al nostre
-          servei de catèring.
+          Com a tot bon concurs hi haurà premi, així que aneu escalfant motors i
+          el dit de disparar.
         </p>
         <p className="mt-4">
-          Amb aquesta informació ens assegurarem que tothom pugui gaudir de la
-          festa i d&apos;un bon sopar, sense ensurts i sense que ningú passi
-          gana!
+          Per participar haureu d&apos;utilitzar una app que es diu Wedshoots,
+          així que ja podeu instal·lar-la i afegir-vos a l&apos;àlbum del nostre
+          casament des de ja.
+        </p>
+        <p className="mt-4">
+          Teniu les instruccions a l&apos;apartat de{" "}
+          <Link to="/wedshoots" className="underline hover:text-gold">
+            Wedshoots
+          </Link>{" "}
+          d&apos;aquesta web.
         </p>
       </div>
       <div className="mt-4">

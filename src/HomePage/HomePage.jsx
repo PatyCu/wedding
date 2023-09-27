@@ -3,11 +3,13 @@ import imgHeroFull from "../img/hero-full.png";
 import imgHeroMD from "../img/hero-1790.png";
 import imgHeroSD from "../img/hero-1055.png";
 import imgHeroXSD from "../img/hero-480.png";
-//import imgParella from "../img/parella.jpg";
 import imgEvent from "../img/torre-can-parellada.jpg";
-//import imgAssistencia from "../img/assistencia.jpg";
 import imgComArribar from "../img/how-to-get-there.jpg";
-import imgLlista from "../img/suitcase.jpg";
+import imgAutocars from "../img/autocars.jpg";
+import imgCamera from "../img/camera.jpg";
+//import imgParella from "../img/parella.jpg";
+//import imgAssistencia from "../img/assistencia.jpg";
+//import imgLlista from "../img/suitcase.jpg";
 //import imgGaleria from "../img/coming_soon.png";
 
 const HomePage = () => {
@@ -53,23 +55,10 @@ const HomePage = () => {
       </div>
       <section className="my-0 mx-auto w-full max-w-7xl p-0 text-center">
         <ul>
-          {/* <li key="historia">
-            <SecondaryNavigation
-              title="Història"
-              link="/historia"
-              img={imgParella}
-            />
-          </li> */}
           <li key="event">
             <SecondaryNavigation title="L'event" link="/event" img={imgEvent} />
           </li>
-          {/* <li key="rsvp">
-            <SecondaryNavigation
-              title="Confirmar Assistència"
-              link="/"
-              img={imgAssistencia}
-            />
-          </li> */}
+
           <li key="arribar">
             <SecondaryNavigation
               title="Com arribar"
@@ -77,14 +66,42 @@ const HomePage = () => {
               img={imgComArribar}
             />
           </li>
-          <li key="registry">
+          <li key="autocars">
+            <SecondaryNavigation
+              title="Autocars"
+              link="/autocars"
+              img={imgAutocars}
+            />
+          </li>
+          <li>
+            <SecondaryNavigation
+              title="Wedshoots"
+              link="/wedshoots"
+              img={imgCamera}
+            />
+          </li>
+          {/* <li key="historia">
+            <SecondaryNavigation
+              title="Història"
+              link="/historia"
+              img={imgParella}
+            />
+          </li> */
+          /* <li key="rsvp">
+            <SecondaryNavigation
+              title="Confirmar Assistència"
+              link="/"
+              img={imgAssistencia}
+            />
+            <li key="registry">
             <SecondaryNavigation
               title="Llista de noces"
               link="/wedding-registry"
               img={imgLlista}
             />
           </li>
-          {/*           <li key="gallery">
+          </li>
+          <li key="gallery">
             <SecondaryNavigation title="Galeria" link="/" img={imgGaleria} />
           </li> */}
         </ul>

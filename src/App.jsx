@@ -6,7 +6,7 @@ import Event from "./HomePage/Event";
 import ComArribar from "./HomePage/ComArribar";
 import imgMonograma from "./img/monograma-clar_300_cropped.png";
 import Autocars from "./HomePage/Autocars";
-import Concurs from "./HomePage/Concurs";
+import Wedshoots from "./HomePage/Wedshoots";
 //import Historia from "./HomePage/Historia";
 //import Assistencia from "./HomePage/Assistencia";
 //import Gift from "./wedding-registry/Gift";
@@ -28,27 +28,28 @@ const App = () => {
                 <Link to="/event">L&apos;event</Link>
               </li>
               <li>
-                <Link to="/autocars">Autocars</Link>
-              </li>
-              <li>
                 <Link to="/comarribar">Com arribar</Link>
               </li>
               <li>
-                <Link to="/concurs">Concurs de fotos</Link>
+                <Link to="/autocars">Autocars</Link>
               </li>
+              <li>
+                <Link to="/wedshoots">Wedshoots</Link>
+              </li>
+
               {/* 
               <li>
                 <Link to="/historia">Història</Link>
               </li>
               <li>
                 <Link to="/assistencia">Assistència</Link>
-              </li>
-              <li>
-                <Link to="/registry-list">Llista de noces</Link>
-              </li>
+              </li>              
               <li>
                 <Link to="/galeria">Galeria</Link>
-              </li> */}
+              </li> 
+              <li>
+                <Link to="/registry-list">Llista de noces</Link>
+              </li>*/}
             </ul>
           </nav>
         </header>
@@ -59,10 +60,10 @@ const App = () => {
         <Route path="/event" element={<Event />} />
         <Route path="/autocars" element={<Autocars />} />
         <Route path="/comarribar" element={<ComArribar />} />
-        <Route path="/concurs" element={<Concurs />} />
-        {/* <Route path="/historia" element={<Historia />} />
+        <Route path="/wedshoots" element={<Wedshoots />} />
+        {/* <Route path="/gift/:id" element={<Gift />} />
+        <Route path="/historia" element={<Historia />} />
         <Route path="/assistencia" element={<Assistencia />} />
-        <Route path="/gift/:id" element={<Gift />} />
         <Route path="/galeria" element={<Galeria />} /> */}
         <Route path="/" element={<HomePage />} />
       </Routes>
