@@ -1,7 +1,9 @@
 import { useParams } from "react-router-dom";
 import { getGiftById, getPrevAndNextGift } from "../data/fetchDataGifts";
 import Breadcrumb from "../utils/Breadcrumb";
-import GiftDetails from "./GiftDetails";
+import imgCompte from "../img/compte.png";
+
+//import GiftDetails from "./GiftDetails";
 
 const Gift = () => {
   const { id } = useParams();
@@ -32,8 +34,27 @@ const Gift = () => {
           <div className="block w-full">
             <h1 className="text-4xl font-bold">{gift.itemTitle}</h1>
             <h5 className="p-2">{gift.itemDescription}</h5>
+            <h5 className="p-2">Experiència valorada en {gift.itemValue}</h5>
           </div>
-          <GiftDetails id={id} gift={gift} />
+          <div className="m-4 w-fit  p-2">
+            <p>
+              Si vols que la teva contribució vagi dirigida a aquesta
+              experiència:
+            </p>
+            <p className="mt-2 ml-4">
+              Concepte:{" "}
+              <span className="font-bold text-gold">{gift.itemTitle}</span>
+            </p>
+            <p className="mt-2 ml-4">
+              IBAN:
+              <img
+                src={imgCompte}
+                alt="Compte corrent"
+                className="ml-14 w-52 rounded-lg border-2 border-solid border-lightgold"
+              />
+            </p>
+          </div>
+          {/* <GiftDetails id={id} gift={gift} /> */}
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ import Autocars from "./HomePage/Autocars";
 import Wedshoots from "./HomePage/Wedshoots";
 //import Historia from "./HomePage/Historia";
 //import Assistencia from "./HomePage/Assistencia";
-//import Gift from "./wedding-registry/Gift";
+import Gift from "./wedding-registry/Gift";
 //import Galeria from "./HomePage/Galeria";
 
 const App = () => {
@@ -48,22 +48,20 @@ const App = () => {
               </li>              
               <li>
                 <Link to="/galeria">Galeria</Link>
-              </li> 
-              <li>
-                <Link to="/registry-list">Llista de noces</Link>
-              </li>*/}
+              </li> */}
             </ul>
           </nav>
         </header>
       </div>
 
       <Routes>
-        <Route path="/registry-list" element={<RegistryList />} />
         <Route path="/event" element={<Event />} />
         <Route path="/autocars" element={<Autocars />} />
         <Route path="/comarribar" element={<ComArribar />} />
         <Route path="/wedshoots" element={<Wedshoots />} />
-        {/* <Route path="/gift/:id" element={<Gift />} />
+        <Route path="/registry-list" element={<RegistryList />} />
+        <Route path="/gift/:id" element={<Gift />} />
+        {/* 
         <Route path="/historia" element={<Historia />} />
         <Route path="/assistencia" element={<Assistencia />} />
         <Route path="/galeria" element={<Galeria />} /> */}

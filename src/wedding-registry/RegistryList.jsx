@@ -1,4 +1,4 @@
-//import GiftList from "./GiftList";
+import GiftList from "./GiftList";
 import imgHero from "../img/new_zealand_cover_w_2400.jpg";
 import imgParella from "../img/parella.jpg";
 import imgCompte from "../img/compte.png";
@@ -50,10 +50,10 @@ const RegistryList = () => {
           <img src={imgCompte} alt="Compte corrent" className="mx-auto w-52" />
         </p>
       </section>
-      {/* <section className="my-10">
+      <section className="my-10">
         <h2 className="pb-5 text-2xl md:my-0 md:mx-auto">Regals</h2>
         <GiftList />
-      </section> */}
+      </section>
     </div>
   );
 };
