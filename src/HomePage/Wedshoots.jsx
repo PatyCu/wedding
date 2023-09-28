@@ -1,5 +1,7 @@
 import imgWedshoots from "../img/icon-wedshoots.png";
 import imgQRCode from "../img/icon-qrcode.jpg";
+import imgAppleStoreBadge from "../img/apple-store-badge.svg";
+import imgGooglePlayBadge from "../img/google-play-badge.svg";
 
 const Wedshoots = () => {
   return (
@@ -37,6 +39,34 @@ const Wedshoots = () => {
               <a href="http://www.wedshoots.com">WedShoots</a> o busca-la a la
               teva botiga d&apos;aplicacions.
             </p>
+            <ul className="mx-auto mt-4 flex justify-center">
+              <li>
+                <a
+                  href="https://apps.apple.com/es/app/wedshoots/id660256196"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={imgAppleStoreBadge}
+                    alt="Apple Store Badge icon"
+                    className="h-12"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://play.google.com/store/apps/details?id=net.bodas.android.wedshoots&hl=ca&gl=US"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={imgGooglePlayBadge}
+                    alt="Google Play Badge icon"
+                    className="h-12"
+                  />
+                </a>
+              </li>
+            </ul>
           </li>
           <li className="mt-4 rounded-lg border-2 border-solid border-lightgold p-2">
             <div>
