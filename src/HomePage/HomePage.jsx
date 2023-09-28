@@ -19,6 +19,13 @@ const HomePage = () => {
         <h2 className="pb-5 text-center text-2xl text-gold md:my-0 md:mx-auto">
           L&apos;Oriol i la Paty es casen!
         </h2>
+        <h3 className="pb-5 text-center text-xl text-cobalt md:my-0 md:mx-auto">
+          T&apos;esperem el{" "}
+          <span className="text-gold">
+            dissabte 7 d&apos;Octubre a les 18:30h
+          </span>{" "}
+          a la Torre de Can Parellada
+        </h3>
         <div className="block p-0 leading-7 md:p-10">
           <p>
             Si estàs llegint això és perquè ets una persona important per
