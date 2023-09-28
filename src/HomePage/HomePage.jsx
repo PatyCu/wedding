@@ -62,7 +62,7 @@ const HomePage = () => {
           <li key="arribar">
             <SecondaryNavigation
               title="Com arribar"
-              link="/"
+              link="/comarribar"
               img={imgComArribar}
             />
           </li>
