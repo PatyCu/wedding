@@ -1,9 +1,22 @@
-import { getAllGifts } from "../data/fetchDataGifts";
+import { useEffect, useState } from "react";
+import activitiesService from "../services/activities";
 import SecondaryNavigation from "../utils/SecondaryNavigation";
 
 const GiftList = () => {
-  const allGifts = getAllGifts();
-  //const imgPath = "../img/";
+  const [activities, setActivities] = useState([]);
+
+  useEffect(() => {
+    getActivities();
+  }, []);
+
+  const getActivities = async () => {
+    try {
+      const activitiesData = await activitiesService.getActivities();
+      setActivities(activitiesData.gifts);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
 
   function getImageUrl(name) {
     return new URL(`../img/${name}`, import.meta.url).href;
@@ -12,7 +25,7 @@ const GiftList = () => {
   return (
     <div className="my-0 mx-auto p-0 text-center lg:max-w-[1200px]">
       <ul>
-        {allGifts.map((gift) => (
+        {activities.map((gift) => (
           <li key={gift.itemKey}>
             <SecondaryNavigation
               title={gift.itemTitle}
