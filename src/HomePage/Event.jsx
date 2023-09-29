@@ -6,8 +6,42 @@ import imgIconParty from "../img/icon-party.png";
 import imgIconBackache from "../img/icon-backache.png";
 import imgTorre from "../img/torre_dia.jpg";
 import { Link } from "react-router-dom";
+import TimelineItem from "../components/TimelineItem";
 
 const Event = () => {
+  const timelineItems = [
+      {
+          imgSrc: imgIconClock,
+          time: "18:30h",
+          description: "Arribada a la Torre de Can Parellada"
+      },
+      {
+          imgSrc: imgIconCheers,
+          time: "18:45h",
+          description: "Brindem per nosaltres"
+      },
+      {
+          imgSrc: imgIconSnacks,
+          time: "19:00h",
+          description: "Aperitiu"
+      },
+      {
+          imgSrc: imgIconDinner,
+          time: "21:00h",
+          description: "Sopar"
+      },
+      {
+          imgSrc: imgIconParty,
+          time: "23:30h",
+          description: "Party!"
+      },
+      {
+          imgSrc: imgIconBackache,
+          time: "02:30h",
+          description: "...Fins que el cos aguanti"
+      }
+  ];
+
   return (
     <div id="container-event" className="my-0 mx-auto max-w-[1200px] p-10">
       <h2 className="pb-5 text-center text-2xl text-gold md:my-0 md:mx-auto">
@@ -67,63 +101,16 @@ const Event = () => {
         <h3 className="pb-5 text-left text-xl text-gold md:my-0 md:mx-auto">
           Timeline*
         </h3>
-        <p className="mt-2 mb-4 italic">* Tots els horaris són aproximats.</p>
-        <ul className="flex-center mx-auto flex flex-row flex-wrap content-center items-center gap-4 align-middle">
-          <li className="w-fit basis-2/12 justify-items-center">
-            <img
-              src={imgIconClock}
-              className="mx-auto w-[4.5rem]"
-              alt="clock icon"
-            />
-          </li>
-          <li className="basis-2/12">18:30h</li>
-          <li className="basis-6/12">Arribada a la Torre de Can Parellada</li>
-          <li className="w-fit basis-2/12 justify-items-center">
-            <img
-              src={imgIconCheers}
-              className="mx-auto w-24"
-              alt="champagne glasses icon"
-            />
-          </li>
-          <li className="basis-2/12">18:45h</li>
-          <li className="basis-6/12">Brindem per nosaltres</li>
-          <li className="w-fit basis-2/12 justify-items-center">
-            <img
-              src={imgIconSnacks}
-              className="mx-auto w-24"
-              alt="snacks icon"
-            />
-          </li>
-          <li className="basis-2/12">19:00h</li>
-          <li className="basis-6/12">Aperitiu</li>
-          <li className="w-fit basis-2/12 justify-items-center">
-            <img
-              src={imgIconDinner}
-              className="mx-auto w-24"
-              alt="dinner plate icon"
-            />
-          </li>
-          <li className="basis-2/12">21:00h</li>
-          <li className="basis-6/12">Sopar</li>
-          <li className="w-fit basis-2/12 justify-items-center">
-            <img
-              src={imgIconParty}
-              className="mx-auto w-24"
-              alt="disco ball icon"
-            />
-          </li>
-          <li className="basis-2/12">23:30h</li>
-          <li className="basis-6/12">Party!</li>
-          <li className="w-fit basis-2/12 justify-items-center">
-            <img
-              src={imgIconBackache}
-              className="mx-auto w-24"
-              alt="person with back ache icon"
-            />
-          </li>
-          <li className="basis-2/12">02:30h</li>
-          <li className="basis-6/12">...Fins que el cos aguanti</li>
-        </ul>
+        <p className="mt-2 mb-4 italic">* Tots els horaris són aproximats.</p>  
+
+        {timelineItems.map((item) => (
+          <TimelineItem 
+            key={item.time}
+            imgSrc={item.imgSrc}
+            time={item.time}
+            description={item.description}
+          />
+        ))}
       </div>
     </div>
   );
