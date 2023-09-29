@@ -95,6 +95,14 @@
       "itemValue": "300€",
       "itemFunded": "0€",
       "itemImg": "gift_martinborough.jpg"
+    },
+    {
+      "itemKey": "12",
+      "itemTitle": "Lord of the Rings Tour",
+      "itemDescription": "Tour per les localitzacions de rodatge de les películes de El Senyor dels Anells a Glenorchy i Queenstown. Aquest tour inclou un passeig en barca pel riu Anduin, un passeig per les muntanyes de Isengard i pel bosc de Lothlórien. Disclaimer: malgrat la foto, nosaltres NO anirem disfressats de personatges de El Senyor dels Anells.",
+      "itemValue": "220€",
+      "itemFunded": "0€",
+      "itemImg": "gift_lordoftherings.jpg"
     }
   ]
 }
