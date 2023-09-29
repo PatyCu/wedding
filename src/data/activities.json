@@ -2,8 +2,8 @@
   "gifts": [
     {
       "itemKey": "0",
-      "itemTitle": "Hobbiton",
-      "itemDescription": "Hobbiton Movie Set Tour",
+      "itemTitle": "Hobbiton Movie Set Tour",
+      "itemDescription": "Visita al set de rodatge de les escenes del poble dels Hobbits a la Comarca a les películes de El Senyor dels Anells i El Hobbit.",
       "itemValue": "106€",
       "itemFunded": "106€",
       "itemImg": "gift_hobbiton.jpg"
@@ -19,7 +19,7 @@
     {
       "itemKey": "2",
       "itemTitle": "Tongariro Alpine Crossing",
-      "itemDescription": "Tongariro Half-Day Alpine Crossing. Tour per fer una part del Tongariro Alpine Crossing",
+      "itemDescription": "Tongariro Half-Day Alpine Crossing. Tour per fer una part del Tongariro Alpine Crossing, un dels millors trekkings del món. Sencera la Paty no l'aguantaria pas, però una part sí!",
       "itemValue": "280€",
       "itemFunded": "0€",
       "itemImg": "gift_alpinecrossing.jpg"
@@ -27,7 +27,7 @@
     {
       "itemKey": "3",
       "itemTitle": "Whale Watching",
-      "itemDescription": "Whale Watch Kaikoura. Tour per veure balenes",
+      "itemDescription": "Tour per veure balenes a Kaikoura, un dels millors llocs del món per veure balenes. Tant, que es comprometen a tornar-te els diners si no en veus cap! A la Paty li fa especial il·lusió veure balenes, així que hem decidit anar a tope i agafar una cabina VIP per tenir millor visibilitat dins del vaixell.",
       "itemValue": "270€",
       "itemFunded": "0€",
       "itemImg": "gift_whales.jpg"
@@ -35,15 +35,15 @@
     {
       "itemKey": "4",
       "itemTitle": "Helicopter a Franz Josef",
-      "itemDescription": "Helicopter Flight with Snow Landing. Vol amb helicòpter per veure el glacial de Franz Josef",
+      "itemDescription": "Vol amb helicòpter per veure els glaciars de Franz Josef i Fox, MtCook i Mt Tasman, incloent aterratge a la neu i breu passeig. A l'Oriol li encanten els helicòpters i la neu, així que aquesta activitat és perfecta per ell!",
       "itemValue": "504€",
       "itemFunded": "0€",
       "itemImg": "gift_helicopter.jpg"
     },
     {
       "itemKey": "5",
-      "itemTitle": "Milford Sound",
-      "itemDescription": "Milford Sound Cruise. Creuer per Milford Sound",
+      "itemTitle": "Milford Sound Cruise",
+      "itemDescription": "Creuer per Milford Sound, un dels llocs més bonics de Nova Zelanda. Aquest tour dura un dia sencer, i inclou visita guiada des de Queenstown en un autocar amb sostre de vidre perfecte per a no perdre cap detall de les vistes espectaculars del camí. Un cop a Milford Sound, farem un creuer de 2h30 amb dinar inclòs.",
       "itemValue": "350€",
       "itemFunded": "0€",
       "itemImg": "gift_milfordsound.jpg"
@@ -51,7 +51,7 @@
     {
       "itemKey": "6",
       "itemTitle": "Queenstown Dinner Cruise",
-      "itemDescription": "Queenstown Dinner Cruise. Creuer amb sopar a Queenstown",
+      "itemDescription": "Creuer amb sopar a Queenstown. Creuer de 2h amb sopar inclòs per veure Queenstown des del llac Wakatipu gaudint de la posta de sol.",
       "itemValue": "157€",
       "itemFunded": "0€",
       "itemImg": "gift_dinnercruise.jpg"
@@ -59,7 +59,7 @@
     {
       "itemKey": "7",
       "itemTitle": "Central Otago Wine Tour",
-      "itemDescription": "Central Otago Full Day Wine Tour. Tour per les vinyes de Central Otago",
+      "itemDescription": "Tour per les vinyes de Central Otago visitant diverses vinyes i tastant els seus vins. L'àrea de Centrat Otago és famosa pels seus vins, especialment els vins blancs i els Pinot Noir.",
       "itemValue": "300€",
       "itemFunded": "0€",
       "itemImg": "gift_winetour.jpg"
@@ -67,10 +67,34 @@
     {
       "itemKey": "8",
       "itemTitle": "Stargazing a Mount Cook",
-      "itemDescription": "Stargazing at Mount Cook. Tour per veure les estrelles a Mount Cook",
+      "itemDescription": "Stargazing at Mount Cook. Tour per veure les estrelles a Mount Cook, una de les zones amb menys contaminació lumínica del món i per tant un dels millors llocs per veure les estrelles. Aquesta zona és part de la Dark Sky Reserve, una reserva de cel fosc protegida per la UNESCO.",
       "itemValue": "200€",
       "itemFunded": "0€",
       "itemImg": "gift_stargazing.jpg"
+    },
+    {
+      "itemKey": "9",
+      "itemTitle": "Spa a Rotorua",
+      "itemDescription": "Deluxe Romantic Package al Polynesian Spa de Rotorua. Rotorua és una zona volcànica amb molts spas naturals. Aquesta experiència inclou 3 hores de spa, un massatge de 60 minuts a piscines naturalsuna piscina privada, massatge i una copa d'escumós.",
+      "itemValue": "368€",
+      "itemFunded": "0€",
+      "itemImg": "gift_polynesianspa.jpg"
+    },
+    {
+      "itemKey": "10",
+      "itemTitle": "Glowworm Caves",
+      "itemDescription": "Tour per les coves de Waitomo per veure els famosos Glowworms, uns insectes que brillen en la foscor. Aquest tour inclou un passeig en barca per les coves i un tour a peu per les coves secundàries.",
+      "itemValue": "200€",
+      "itemFunded": "0€",
+      "itemImg": "gift_glowworms.jpg"
+    },
+    {
+      "itemKey": "11",
+      "itemTitle": "Martinborough Wine Tour",
+      "itemDescription": "Tour per les vinyes de Martinborough visitant diverses vinyes i tastant els seus vins. L'àrea de Martinborough només té un 3% de tota l'area de vinyes de Nova Zelanda, però tot i així és ampliament considerada com una de les millors àreas vitivinícoles de New Zealand. Són especialment famosos els seus Pinot Noir, produïts per algunes de les bodeugues amb més prestigi del país.",
+      "itemValue": "300€",
+      "itemFunded": "0€",
+      "itemImg": "gift_martinborough.jpg"
     }
   ]
 }
