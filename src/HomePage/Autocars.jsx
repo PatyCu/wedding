@@ -29,78 +29,56 @@ const Autocars = () => {
         <h3 className="pb-5 text-left text-xl text-gold md:my-0 md:mx-auto">
           <b>Ruta Penedès:</b> El Pla - Vilafranca - Ordal
         </h3>
-        <div>
-          <table
-            id="horaris-penedes"
-            className="w-full max-w-[600px] border-collapse bg-white p-2 text-left align-middle"
-          >
-            <thead>
-              <tr className="bg-cobalt p-2 text-lightgold">
-                <th>Parada</th>
-                <th>Sortida</th>
-                <th>Trobada</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="font-bold text-cobalt">17:20h</td>
-                <td>El Pla</td>
-                <td>Poliesportiu</td>
-              </tr>
-              <tr>
-                <td className="font-bold text-cobalt">17:30h</td>
-                <td>Puigdàlber</td>
-                <td>Carretera</td>
-              </tr>
-              <tr>
-                <td className="font-bold text-cobalt">17:45h</td>
-                <td>Vilafranca</td>
-                <td>Antiga Hisenda c/Santa Clara</td>
-              </tr>
-              <tr>
-                <td className="font-bold text-cobalt">18:00h</td>
-                <td>Cantallops</td>
-                <td>Parada de bus</td>
-              </tr>
-              <tr>
-                <td className="font-bold text-cobalt">18:10h</td>
-                <td>Sant Pau d&apos;Ordal</td>
-                <td>Parada de bus</td>
-              </tr>
-            </tbody>
-          </table>
+        <div className="grid grid-cols-6 md:grid-cols-5 gap-4 md:w-1/2">
+          <div className="bg-cobalt p-2 text-lightgold col-span-2 md:col-span-1">Hora</div>
+          <div className="bg-cobalt p-2 text-lightgold col-span-2 md:col-span-2">Sortida</div>
+          <div className="bg-cobalt p-2 text-lightgold col-span-2 md:col-span-2">Trobada</div>
+          <div className="font-bold text-cobalt col-span-2 md:col-span-1">17:20h</div>
+          <div className="col-span-2 md:col-span-2">El Pla</div>
+          <div className="col-span-2 md:col-span-2">Poliesportiu</div>
+          <div className="font-bold text-cobalt col-span-2 md:col-span-1">17:30h</div>
+          <div className="col-span-2 md:col-span-2">Puigdàlber</div>
+          <div className="col-span-2 md:col-span-2">Carretera</div>
+          <div className="font-bold text-cobalt col-span-2 md:col-span-1">17:45h</div>
+          <div className="col-span-2 md:col-span-2">Vilafranca</div>
+          <div className="col-span-2 md:col-span-2">Carrer de Santa Clara, 3</div>
+          <div className="font-bold text-cobalt col-span-2 md:col-span-1">18:00h</div>
+          <div className="col-span-2 md:col-span-2">Cantallops</div>
+          <div className="col-span-2 md:col-span-2">Parada de bus</div>
+          <div className="font-bold text-cobalt col-span-2 md:col-span-1">18:10h</div>
+          <div className="col-span-2 md:col-span-2">Sant Pau d&apos;Ordal</div>
+          <div className="col-span-2 md:col-span-2">Parada de bus</div>
         </div>
       </div>
-      <div className="mt-4">
+      <div className="mt-8">
         <h3 className="pb-5 text-left text-xl text-gold md:my-0 md:mx-auto">
           <b>Ruta Barcelona:</b> Barcelona - Ordal
         </h3>
-        <div>
-          <table
-            id="horaris-bcn"
-            className="w-full max-w-[600px] border-collapse bg-white p-2 text-left align-middle"
-          >
-            <thead>
-              <tr className="bg-cobalt p-2 text-lightgold">
-                <th>Parada</th>
-                <th>Sortida</th>
-                <th>Trobada</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="font-bold text-cobalt">17:15h</td>
-                <td>BCN</td>
-                <td>Pl. Espanya - Hotel Catalonia</td>
-              </tr>
-            </tbody>
-          </table>
-          <p className="mt-4">
-            Disclaimer: a la tornada (i només a la tornada), la{" "}
-            <strong>Ruta Barcelona</strong> farà una parada prèvia extra per
-            portar als nuvis al seu hotel a Sitges
-          </p>
+        <div className="grid grid-cols-6 md:grid-cols-5 gap-4 md:w-1/2">
+          <div className="bg-cobalt p-2 text-lightgold col-span-2 md:col-span-1">Hora</div>
+          <div className="bg-cobalt p-2 text-lightgold col-span-2 md:col-span-2">Sortida</div>
+          <div className="bg-cobalt p-2 text-lightgold col-span-2 md:col-span-2">Trobada</div>
+          <div className="font-bold text-cobalt col-span-2 md:col-span-1">17:15h</div>
+          <div className="col-span-2 md:col-span-2">BCN</div>
+          <div className="col-span-2 md:col-span-2">Pl. Espanya - Hotel Catalonia</div>
         </div>
+      </div>
+      <div className="mt-8">
+        <h3 className="pb-5 text-left text-xl text-gold md:my-0 md:mx-auto">
+          <b>Tornada:</b> Ordal - Barcelona + Ordal - Penedès
+        </h3>
+        <div className="grid grid-cols-6 md:grid-cols-5 gap-4 md:w-1/2">
+          <div className="bg-cobalt p-2 text-lightgold col-span-2 md:col-span-1">Hora</div>
+          <div className="bg-cobalt p-2 text-lightgold col-span-2 md:col-span-2">Sortida</div>
+          <div className="bg-cobalt p-2 text-lightgold col-span-2 md:col-span-2">Trobada</div>
+          <div className="font-bold text-cobalt col-span-2 md:col-span-1">03:00h aprox.</div>
+          <div className="col-span-2 md:col-span-2">Torre Can Parellada</div>
+          <div className="col-span-2 md:col-span-2">Torre Can Parellada</div>
+        </div>
+        <p className="mt-4">
+          Disclaimer: a la tornada (i només a la tornada), la{" "}
+          <strong>Ruta Ordal - Barcelona</strong> farà una parada prèvia extra per portar als nuvis al seu hotel a Sitges
+        </p>
       </div>
     </div>
   );
