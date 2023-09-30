@@ -13,13 +13,13 @@ const RegistryList = () => {
             alt="Snowed mountains and a lake in a New Zealander landscape"
             className="w-full lg:max-h-[60rem]"
           />
-          <div className="absolute top-1/4 left-4">
+          <div className="absolute top-1/4 left-4 text-center lg:text-left lg:top-1/2 lg:left-4 lg:transform lg:-translate-y-1/2">
             <h1 className="text-3xl md:text-7xl">Nova Zelanda 💍</h1>
-            <h2 className="md:text-xl">
+            <h2 className="md:text-xl text-lg text-white font-semibold">
               Gràcies per ajudar-nos en la nostra aventura!
             </h2>
           </div>
-          <div className="absolute bottom-4 left-4 w-36">
+          <div className="absolute bottom-4 left-4 md:w-36 w-24">
             <img
               src={imgParella}
               className="rounded-full border-2 border-solid border-white"
