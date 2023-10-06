@@ -8,7 +8,7 @@ const TableGuests = ({ people, tableName }) => {
   const angle = (2 * Math.PI) / peopleCount;
   const beginingIndex = -peopleCount / 4;
 
-    const onShowFullName = (persona) => {
+  const onShowFullName = (persona) => {
     if (timeoutIdRef.current) {
       clearTimeout(timeoutIdRef.current);
     }
@@ -35,11 +35,13 @@ const TableGuests = ({ people, tableName }) => {
           {tableName}
         </div>
       </div>
-      {people.map((persona, index) => (
+      {people.map((persona, index) => {
+        {/* console.log(2, persona, index); */}
+        return (
         <button
           key={index}
           className={`absolute w-12 h-12 border-2 border-white rounded-full flex items-center justify-center ${
-            showFullName === persona ? 'bg-blue-400' : 'bg-yellow-300'
+            showFullName === persona.name ? 'bg-blue-400' : 'bg-yellow-300'
           }`}
           style={{
             top: '50%',
@@ -48,11 +50,13 @@ const TableGuests = ({ people, tableName }) => {
               (index + beginingIndex) * angle
             ) * 6.5}rem, ${Math.sin((index + beginingIndex) * angle) * 6.5}rem)`,
           }}
-          onClick={() => onShowFullName(persona)}
+          onClick={() => onShowFullName(persona.name)}
         >
-          {showFullName === persona ? persona : persona.split(' ')[0][0]}
+          {showFullName === persona.name 
+            ? persona.name 
+            : `${persona.name.split(' ')[0][0]}.${persona.name.split(' ')[1][0]}.`}
         </button>
-      ))}
+      )})}
     </div>
   );
 };

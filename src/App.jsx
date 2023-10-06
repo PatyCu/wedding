@@ -10,6 +10,7 @@ import Wedshoots from "./HomePage/Wedshoots";
 //import Historia from "./HomePage/Historia";
 //import Assistencia from "./HomePage/Assistencia";
 import Gift from "./wedding-registry/Gift";
+import Taules from "./HomePage/Taules";
 //import Galeria from "./HomePage/Galeria";
 
 const App = () => {
@@ -39,6 +40,9 @@ const App = () => {
               <li>
                 <Link to="/registry-list">Llista de noces</Link>
               </li>
+              <li>
+                <Link to="/taules">Taules</Link>
+              </li>
               {/* 
               <li>
                 <Link to="/historia">Història</Link>
@@ -61,6 +65,7 @@ const App = () => {
         <Route path="/wedshoots" element={<Wedshoots />} />
         <Route path="/registry-list" element={<RegistryList />} />
         <Route path="/gift/:id" element={<Gift />} />
+        <Route path="/taules" element={<Taules />} />
         {/* 
         <Route path="/historia" element={<Historia />} />
         <Route path="/assistencia" element={<Assistencia />} />
