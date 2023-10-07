@@ -13,12 +13,23 @@ const Taules = () => {
     try {
       const guestsData = await guestsService.getGuests();
       const groupedGuests = guestsData.reduce((acc, guest) => {
+        if (!guest.table) {
+          return acc;
+        }
+        
         if (!acc[guest.table]) {
           acc[guest.table] = [];
         }
+
         acc[guest.table].push(guest);
         return acc;
       }, {});
+      
+
+      Object.keys(groupedGuests).forEach((table) => {
+        groupedGuests[table].sort((a, b) => a.tableposition - b.tableposition);
+      });
+
       setGuests(groupedGuests);
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -35,7 +46,7 @@ const Taules = () => {
         Si no trobeu el vostre nom o el dels vostres acompanyants, 
         poseu-vos en contacte amb nosaltres.
       </p>
-      <div className="flex bg-slate-400 md:flex-row flex-col flex-wrap">
+      <div className="flex md:flex-row flex-wrap justify-center">
       {
         Object.entries(guests).map(([tableName, people]) => (
           <TableGuests key={tableName} people={people} tableName={tableName} />

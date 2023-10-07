@@ -11,9 +11,20 @@ import Wedshoots from "./HomePage/Wedshoots";
 //import Assistencia from "./HomePage/Assistencia";
 import Gift from "./wedding-registry/Gift";
 import Taules from "./HomePage/Taules";
+import { useEffect, useState } from "react";
 //import Galeria from "./HomePage/Galeria";
 
 const App = () => {
+  const [showTaulesLink, setShowTaulesLink] = useState(false);
+
+  useEffect(() => {
+    const now = new Date();
+    const targetDate = new Date("2023-10-07T13:22:00"); // Change this to the date and time you want the link to be visible
+    if (now >= targetDate) {
+      setShowTaulesLink(true);
+    }
+  }, []);
+
   return (
     <BrowserRouter>
       <div className="bg-cobalt bg-party-lights-background">
@@ -40,9 +51,11 @@ const App = () => {
               <li>
                 <Link to="/registry-list">Llista de noces</Link>
               </li>
-              <li>
-                <Link to="/taules">Taules</Link>
-              </li>
+              {showTaulesLink && (     
+                <li>
+                  <Link to="/taules">Taules</Link>
+                </li>
+              )}
               {/* 
               <li>
                 <Link to="/historia">Història</Link>
@@ -65,7 +78,7 @@ const App = () => {
         <Route path="/wedshoots" element={<Wedshoots />} />
         <Route path="/registry-list" element={<RegistryList />} />
         <Route path="/gift/:id" element={<Gift />} />
-        <Route path="/taules" element={<Taules />} />
+        {showTaulesLink && <Route path="/taules" element={<Taules />} />}
         {/* 
         <Route path="/historia" element={<Historia />} />
         <Route path="/assistencia" element={<Assistencia />} />

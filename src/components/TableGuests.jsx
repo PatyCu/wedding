@@ -24,24 +24,25 @@ const TableGuests = ({ people, tableName }) => {
   };
 
   return (
-    <div className="relative w-80 h-80 bg-red-300">
+    <div className="relative w-80 h-80 flex items-center">
       <div
-        className="bg-yellow-100 w-64 h-64 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        className="bg-slate-300 w-64 h-64 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       >
         <div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
           style={{ fontSize: '1.5rem', fontWeight: 'bold' }}
         >
           {tableName}
         </div>
       </div>
       {people.map((persona, index) => {
-        {/* console.log(2, persona, index); */}
         return (
         <button
           key={index}
-          className={`absolute w-12 h-12 border-2 border-white rounded-full flex items-center justify-center ${
-            showFullName === persona.name ? 'bg-blue-400' : 'bg-yellow-300'
+          className={`absolute border-2 border-white ${
+            showFullName === persona.name 
+              ? 'bg-blue-300 px-2 z-50' 
+              : 'bg-yellow-300 rounded-full w-12 h-12'
           }`}
           style={{
             top: '50%',
