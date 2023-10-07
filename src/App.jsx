@@ -19,7 +19,7 @@ const App = () => {
 
   useEffect(() => {
     const now = new Date();
-    const targetDate = new Date("2023-10-07T13:40:00"); // Change this to the date and time you want the link to be visible
+    const targetDate = new Date("2023-10-07T18:30:00"); // Change this to the date and time you want the link to be visible
     if (now >= targetDate) {
       setShowTaulesLink(true);
     }
